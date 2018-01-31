@@ -1,0 +1,57 @@
+.photo {
+  font-family: "PT Sans";
+  background-color: #ffffff;
+  color: #000000;
+  text-transform: uppercase;
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+  &__description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo__title,
+  .photo__description {
+    width: 768px;
+  }
+  .photo-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 768px;
+    margin: 0 auto;
+  }
+  .photo-list__item {
+    width: 324px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .photo-list__item--sunset {
+    width: 648px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo__title,
+  .photo__description {
+    width: 1200px;
+  }
+  .photo-list {
+    width: 1200px;
+  }
+  .photo-list__item {
+    width: 324px;
+    min-height: 267px;
+  }
+  .photo-list__item--sunset {
+    width: 1200px;
+    min-height: 400px;
+  }
+}
