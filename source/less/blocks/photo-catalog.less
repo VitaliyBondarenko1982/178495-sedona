@@ -1,5 +1,4 @@
 .photo-catalog {
-  font-family: "PT Sans";
   background-color: #ffffff;
   color: #000000;
   text-transform: uppercase;
@@ -7,12 +6,27 @@
   line-height: 24px;
   font-weight: 700;
 
+  &__title {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: left;
+  }
+
   &__author {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     text-transform: none;
+    text-align: left;
     color: #333333;
+    margin-top: -14px;
+  }
+  &__number-of-like {
+    text-align: left;
+    margin-top: -5px;
+    padding-left: 36px;
+    padding-bottom: 25px;
   }
 }
 

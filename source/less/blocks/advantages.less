@@ -1,28 +1,50 @@
 .advantages {
-  font-family: "PT Sans";
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
   background-color: #ffffff;
   color: #000000;
-  text-transform: uppercase;
 
   &__banner {
     height: 389px;
     background-image: url("../img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 0 50%;
+    background-position: center;
+  }
+
+  /* &__banner::after {
+    content: "";
+
+    position: absolute;
+    top: 100px;
+    left: 0;
+
+    width: 280px;
+    height: 213px;
+    background-image: url("../img/text-sedona-index.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }  */
+
+  &__heading {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 24px 30px;
+    padding-bottom: 6px;
   }
 
   &__reasons {
     font-size: 14px;
-    font-weight: 400;
-    line-height: 26px;
+    padding: 6px 30px;
   }
+
   &__list {
     list-style:none;
     margin: 0;
     padding: 0;
+  }
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 26px 25px;
+    padding-bottom: 0;
   }
   &__number,
   &__description {
@@ -31,24 +53,62 @@
     font-size: 14px;
     line-height: 21px;
   }
+  &__number {
+    margin-top: -7px;
+  }
+  &__description {
+    padding: 0 26px;
+    padding-bottom: 30px;
 
+  }
   &__item {
     background-color: #eeeeee;
+    margin: 0;
+    padding: 0;
+  }
+  &__image {
+    display: block;
+    height: 260px;
+    margin-top: -15px;
+    margin-bottom: -20px;
   }
 
   &__description-first-reason,
   &__description-second-reason {
-    background-color: #81b3d2;
     color: #ffffff;
+    background-color: #81b3d2;
   }
+
   &__number--first-reason,
   &__description--first-reason,
   &__number--second-reason,
   &__description--second-reason {
     color: #ffffff;
   }
+
+  &__description--first-reason,
+  &__description--second-reason {
+    padding-bottom: 43px;
+  }
+  &__title--first-reason {
+   padding-top: 55px;
+  }
+  &__title--second-reason {
+    padding-top: 38px;
+  }
+
+  &__item:nth-child(4),
+  &__item:last-child {
+   margin-top: -21px;
+  }
+  .advantages__item-without-photo {
+  .advantages__description {
+    padding: 0px 35px;
+    padding-bottom: 30px;
+  }
 }
 
+}
 @media (min-width: @tablet-width) {
   .advantages__list {
     display: flex;

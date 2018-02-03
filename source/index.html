@@ -11,8 +11,8 @@
   <body>
     <header class="page-header">
       <div class="container">
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"></button>
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list-1">
             <li class="site-list-1__item">
@@ -51,22 +51,22 @@
           <li class="advantages__item advantages__item--first-reason">
             <div class="advantages__description-first-reason">
               <h3 class="advantages__title advantages__title--first-reason">Настоящий городок</h3>
-              <p class="advantages__number advantages__number--first-reason">&#8212; №1 &#8212;</p>
+              <p class="advantages__number advantages__number--first-reason">- №1 -</p>
               <p class="advantages__description advantages__description--first-reason">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <img class="advantages__image" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Фото отеля">
             <ul class="features">
-              <li class="features__item">
+              <li class="features__item features__item--apartment">
                 <h3 class="features__title features__title--apartment">Жилье</h3>
                 <p class="features__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
-              <li class="features__item">
+              <li class="features__item features__item--souvenirs">
                 <h3 class="features__title features__title--souvenirs">Сувениры</h3>
                 <p class="features__description">Не только китайского, но и местного производства!</p>
               </li>
-              <li class="features__item">
+              <li class="features__item features__item--food">
                 <h3 class="features__title features__title--food">Еда</h3>
-                <p class="features__description">Всегда заказывайте местный бургер, вы не разочаруетесь!</p>
+                <p class="features__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
             </ul>
           </li>
@@ -115,29 +115,30 @@
 
     <footer class="page-footer">
       <div class="container">
-        <div class="footer-wrapper">
+        <div class="page-footer__wrapper">
       <div class="hashtag">
         <p class="hashtag__visit">#visitsedona</p>
       </div>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="">ТВ</a>
+            <a class="social__link social__link--twitter" href=""><span class="visually-hidden">Cедона в Твиттере</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="">ФБ</a>
+            <a class="social__link social__link--facebook" href=""><span class="visually-hidden">Седона в Фейсбуке</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="">Y</a>
+            <a class="social__link social__link--youtube" href=""><span class="visually-hidden">Седона на Youtube</span></a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
       </div>
     </div>
       </div>
     </footer>
+    <script src="js/menu.js"></script>
   </body>
 </html>
