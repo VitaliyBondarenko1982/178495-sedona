@@ -1,3 +1,6 @@
+
+@import "../variables";
+
 .site-list-2 {
   background-color: #81b3d2;
   list-style: none;
@@ -34,18 +37,32 @@
   .site-list-2 a {
     color: #000000;
     font-size: 14px;
+    border: none;
   }
 
   .site-list-2 {
     display: flex;
     width: 300px;
     background-color: #ffffff;
+    margin-left: auto;
+  }
+  .site-list-2__item:last-child {
+    margin-left: 12px;
   }
 }
 
 @media (min-width: @desktop-width) {
-
   .site-list-2 {
-    width: 325px;
+    width: 480px;
+  }
+  .site-list-2__item {
+    margin-left: 58px;
+  }
+  .site-list-2__item a{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .site-list-2__item:last-child {
+    margin-left: 118px;
   }
 }

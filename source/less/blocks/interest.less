@@ -1,3 +1,5 @@
+@import "../variables";
+
 .interest {
   background-color: #ffffff;
   color: #000000;
@@ -33,19 +35,34 @@
 }
 
 @media (min-width: @tablet-width){
-  .interest__title,
-  .interest__description {
+  .interest .conteiner{
+    min-height: 318px;
     width: 768px;
     margin: 0 auto;
+  }
+  .interest__title {
+    font-size:30px;
+    line-height: 30px;
+  }
+  .interest__description {
     }
   .interest__button {
-    margin: 0 auto;
   }
 }
 
 @media (min-width: @desktop-width){
-  .interest__title,
-  .interest__description {
-  width: 1200px;
+  .interest .conteiner{
+    min-height: 330px;
+    width: 1200px;
+    margin: 0 auto;
   }
+  .interest__title {
+
+  }
+  .interest__description {
+
+    }
+  .interest__button {
+  }
+
 }
