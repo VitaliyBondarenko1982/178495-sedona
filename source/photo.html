@@ -16,10 +16,10 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list-1">
             <li class="site-list-1__item">
-              <a class="site-list-1__link">Главная</a>
+              <a class="site-list-1__link" href="index.html">Главная</a>
             </li>
             <li class="site-list-1__item">
-              <a class="site-list-1__link" href="photo.html">Фото и видео</a>
+              <a class="site-list-1__link" >Фото и видео</a>
             </li>
           </ul>
           <ul class="main-nav__list site-list-2">
@@ -27,7 +27,7 @@
               <a class="site-list-2__link" href="form.html">Форма отзыва</a>
             </li>
             <li class="site-list-2__item">
-              <a class="site-list-2__link" href="#">HTML Academy</a>
+              <a class="site-list-2__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
       </nav>
@@ -41,59 +41,78 @@
 
     <main class="page-main">
 
-      <section class="photo">
-        <div class="container">
-          <div class="advantages__banner"></div>
-        <h1 class="photo__title"> Фото и видео</h1>
-        <p class="photo__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-        <div class="photo__list">
-        <div class="photo__item photo__item--sunset photo-catalog">
-          <img class="photo-catalog__image photo-catalog__image--sunset" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
-          <div class="photo-catalog__description">
-            <h2 class="photo-catalog__title">Неродные просторы</h2>
-            <p class="photo-catalog__author">Автор фото: Борис</p>
+      <section class="banner banner--photo">
+          <div class="banner__image--photo"></div>
+          <div class="banner__wrapper">
+            <h1 class="banner__title--photo">Фото и видео</h1>
+            <p class="banner__description--photo">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
           </div>
-          <p class="photo-catalog__number-of-like">1350</p>
-        </div>
+      </section>
 
-        <div class="photo__item photo-catalog">
-          <img class="photo-catalog__image" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность">
-          <div class="photo-catalog__description">
-            <h2 class="photo-catalog__title">Местная растительность</h2>
-            <p class="photo-catalog__author">Автор фото: Сергей</p>
+      <section class="main-photo">
+        <div class="container">
+          <div class="main-photo__item">
+            <img class="main-photo__image" src="img/photo-sunset-mobile@1x.jpg" alt="Неродные просторы">
+            <div class="main-photo__legend">
+              <div class="main-photo__description">
+                <h2 class="main-photo__title">Неродные просторы</h2>
+                <p class="main-photo__author">Автор фото: Борис</p>
+              </div>
+              <p class="main-photo__like">1350</p>
+            </div>
           </div>
-          <p class="photo-catalog__number-of-like">143</p>
         </div>
-        <div class="photo__item photo-catalog">
-          <img class="photo-catalog__image" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
-          <div class="photo-catalog__description">
-            <h2 class="photo-catalog__title">Дорога на север</h2>
-            <p class="photo-catalog__author">Автор фото: Петр</p>
+      </section>
+
+      <section class="another-photos">
+        <div class="container">
+          <div class="another-photos__wrapper">
+          <div class="another-photos__item">
+            <img class="another-photos__image" src="img/photo-cactus-mobile@1x.jpg" alt="Местная растительность">
+            <div class="another-photos__legend">
+              <div class="another-photos__description">
+                <h2 class="another-photos__title">Местная растительность</h2>
+                <p class="another-photos__author">Автор фото: Сергей</p>
+              </div>
+              <p class="another-photos__like">143</p>
+            </div>
           </div>
-          <p class="photo-catalog__number-of-like">96</p>
-        </div>
-        <div class="photo__item photo-catalog">
-          <img class="photo-catalog__image" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола">
-          <div class="photo-catalog__description">
-            <h2 class="photo-catalog__title">Мост дьявола</h2>
-            <p class="photo-catalog__author">Автор фото: Антон</p>
+          <div class="another-photos__item">
+            <img class="another-photos__image" src="img/photo-roads-mobile@1x.jpg" alt="Дорога на север">
+            <div class="another-photos__legend">
+              <div class="another-photos__description">
+                <h2 class="another-photos__title">Дорога на север</h2>
+                <p class="another-photos__author">Автор фото: Петр</p>
+              </div>
+            <p class="another-photos__like another-photos__like--road">96</p>
+            </div>
           </div>
-          <p class="photo-catalog__number-of-like">254</p>
-        </div>
+          <div class="another-photos__item another-photos__item--bridge">
+            <img class="another-photos__image" src="img/photo-bridge-mobile@1x.jpg" alt="Мост дьявола">
+            <div class="another-photos__legend">
+              <div class="another-photos__description">
+                <h2 class="another-photos__title">Мост дьявола</h2>
+                <p class="another-photos__author">Автор фото: Антон</p>
+              </div>
+              <p class="another-photos__like">254</p>
+            </div>
+          </div>
         </div>
         </div>
       </section>
 
       <section class="video">
         <div class="container">
-        <h2 class="video__title">Все еще сомневаетесь</h2>
-        <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <video class="video__image" controls preload="metadata" width="321" height="201" poster="img/video-mobile@1x.jpg">
-          <source src="video.mp4" type="video/mp4">
-          <source src="video.ogv" type="video/ogg">
-          <source src="video.webm" type="video/webm">
-        </video>
-      </div>
+          <div class="video__wrapper">
+            <h2 class="video__title">Все еще сомневаетесь</h2>
+            <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+            <video class="video__image" controls preload="metadata" width="321" height="201" poster="img/video-mobile@1x.jpg">
+              <source src="video.mp4" type="video/mp4">
+              <source src="video.ogv" type="video/ogg">
+              <source src="video.webm" type="video/webm">
+            </video>
+          </div>
+        </div>
       </section>
     </main>
 

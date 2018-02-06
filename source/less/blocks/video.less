@@ -1,6 +1,11 @@
 @import "../variables";
 
 .video {
+  &__wrapper {
+    width: 320px;
+    margin: 0 auto;
+    }
+
   &__title {
     font-size: 18px;
     font-weight: 700;
@@ -20,29 +25,46 @@
   &__image {
     padding-bottom: 107px;
   }
-
 }
 
 @media (min-width: @tablet-width) {
-  .video__title,
-  .video__description {
-    width: 450px;
+  .video {
+  &__wrapper {
+    width: 768px;
     margin: 0 auto;
+    }
+
+  &__title {
+    font-size: 30px;
+    line-height: 30px;
+    padding-top: 7px;
+    margin-top: 60px;
   }
 
-  .video__image {
+  &__description {
+    padding: 0 175px;
+    padding-bottom: 14px;
+  }
+
+  &__image {
     width: 648px;
-    min-height: 500px;
+    height: 500px;
+    padding-bottom: 107px;
+  }
   }
 }
 
 @media (min-width: @desktop-width) {
-  .video__title,
-  .video__description {
-    width: 480px;
-  }
-  .video__image {
+    .video {
+  &__wrapper {
     width: 800px;
-    min-height: 500px;
+    margin: 0 auto;
+    }
+
+  &__image {
+    width: 800px;
+  }
   }
 }
+
+

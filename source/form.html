@@ -11,23 +11,23 @@
   <body>
      <header class="page-header">
       <div class="container">
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"></button>
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list-1">
             <li class="site-list-1__item">
-              <a>Главная</a>
+              <a class="site-list-1__link" href="index.html">Главная</a>
             </li>
             <li class="site-list-1__item">
-              <a href="photo.html">Фото и видео</a>
+              <a class="site-list-1__link" href="photo.html">Фото и видео</a>
             </li>
           </ul>
           <ul class="main-nav__list site-list-2">
             <li class="site-list-2__item">
-              <a href="form.html">Форма отзыва</a>
+              <a class="site-list-2__link">Форма отзыва</a>
             </li>
             <li class="site-list-2__item">
-              <a href="#">HTML Academy</a>
+              <a class="site-list-2__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -41,86 +41,89 @@
     </header>
 
     <main class="page-main">
-      <div class="container">
-        <div class="advantages__banner"></div>
-      <section class="let-feedback">
-        <h1 class="let-feedback__title">Оставьте свой отзыв</h1>
-        <p class="let-feedback__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <section class="banner banner--photo">
+        <div class="container">
+          <div class="banner__image--photo"></div>
+          <div class="banner__wrapper">
+            <h1 class="banner__title--photo">Оставьте свой отзыв</h1>
+            <p class="banner__description--photo">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          </div>
       </section>
-      <form class="feedback" method="get" action="https://echo.htmlacademy.ru">
-        <div class="list feedback__name">
-          <h2 class="list__title">Представьтесь:</h2>
-          <label class="list__name name" for="name">
+
+      <form class="feedback"  method="get" action="https://echo.htmlacademy.ru">
+
+        <section class="name">
+          <h2 class="name__title">Представьтесь:</h2>
+          <label class="name__item" for="name">
             <input class="name__field" id="name" type="text" name="name" placeholder="Петр" required>
             <span class="name__text">Имя*:</span>
           </label>
-          <label class="list__name name" for="surname">
+          <label class="name__item" for="surname">
             <input class="name__field" id="surname" type="text" name="surname" placeholder="Иванов" required>
             <span class="name__text">Фамилия*:</span>
           </label>
-          <label class="list__name name" for="middle-name">
+          <label class="name__item" for="middle-name">
             <input class="name__field" id="middle-name" type="text" name="middle-name" placeholder="Александрович" required>
             <span class="name__text">Отчество*:</span>
           </label>
-        </div>
+        </section>
 
-        <div class="list feedback__contacts">
-          <h2 class="list__title">Контактная информация:</h2>
-          <label class="list__contacts contacts" for="tel">
+        <section class="contacts">
+          <h2 class="contacts__title">Контактная информация:</h2>
+          <label class="contacts__item" for="tel">
             <input class="contacts__field" type="tel" name="tel" id="tel" placeholder="Введите телефон" required>
             <span class="contacts__text">Контактный телефон*:</span>
           </label>
-          <label class="list__contacts contacts" for="email">
+          <label class="contacts__item" for="email">
             <input class="contacts__field" type="email" name="email" id="email" placeholder="Введите e-mail" required>
             <span class="contacts__text">Электронная почта*:</span>
           </label>
-        </div>
+        </section>
 
-        <div class="list feedback__radio">
-          <h2 class="list__title">Ваше общее впечатление:</h2>
-            <label class="radio list__radio" for="impression-good">
-              <input class="radio__field radio__field--good" type="radio" name="impression-good" id="impression-good" value="good" checked>
-              <span class="radio__text">Скорее положительное</span>
+        <div class="impression">
+          <h2 class="impression__title">Ваше общее впечатление:</h2>
+            <label class="impression__item" for="impression-good">
+              <input class="impression__field impression__field--good" type="radio" name="impression-good" id="impression-good" value="good" checked>
+              <span class="impression__text">Скорее положительное</span>
             </label>
-            <label class="radio list__radio" for="impression-bad">
-              <input class="radio__field radio__field--bad" type="radio" name="impression-bad" id="impression-bad" value="bad">
-              <span class="radio__text">Скорее отрицательное</span>
+            <label class="impression__item" for="impression-bad">
+              <input class="impression__field impression__field--bad" type="radio" name="impression-bad" id="impression-bad" value="bad">
+              <span class="impression__text">Скорее отрицательное</span>
             </label>
-            <label class="radio list__radio" for="impression-not-answer">
-              <input class="radio__field radio__field--not-answer" type="radio" name="impression-not-answer" id="impression-not-answer" value="not-answer">
-              <span class="radio__text">Затрудняюсь ответить</span>
+            <label class="impression__item" for="impression-not-answer">
+              <input class="impression__field impression__field--not-answer" type="radio" name="impression-not-answer" id="impression-not-answer" value="not-answer">
+              <span class="impression__text">Затрудняюсь ответить</span>
             </label>
          </div>
 
-        <div class="list feedback__checkbox">
-          <h2 class="list__title">Посещенные достопримечательности:</h2>
-            <label class="checkbox list__checkbox" for="sights-bridge">
-              <input class="checkbox__field checkbox__field--bridge" type="checkbox" name="sights-bridge" id="sights-bridge" value="bridge" checked>
-              <span class="checkbox__text">Мост Дьявола</span>
+        <div class="sights">
+          <h2 class="sights__title">Посещенные достопримечательности:</h2>
+            <label class="sights__item" for="sights-bridge">
+              <input class="sights__field sights__field--bridge" type="checkbox" name="sights-bridge" id="sights-bridge" value="bridge" checked>
+              <span class="sights__text">Мост Дьявола</span>
             </label>
-            <label class="checkbox list__checkbox" for="sights-park">
-              <input class="checkbox__field checkbox__field--park" type="checkbox" name="sights-park" id="sights-park" value="park" checked>
-              <span class="checkbox__text">Слайд-парк</span>
+            <label class="sights" for="sights-park">
+              <input class="sights__field sights__field--park" type="checkbox" name="sights-park" id="sights-park" value="park" checked>
+              <span class="sights__text">Слайд-парк</span>
             </label>
-            <label class="checkbox list__checkbox" for="sights-hill">
-              <input class="checkbox__field checkbox__field--hill" type="checkbox" name="sights-hill" id="sights-hill" value="hill">
-              <span class="checkbox__text">Гора-Колокол</span>
+            <label class="sights" for="sights-hill">
+              <input class="sights__field sights__field--hill" type="checkbox" name="sights-hill" id="sights-hill" value="hill">
+              <span class="sights__text">Гора-Колокол</span>
             </label>
-            <label class="checkbox list__checkbox" for="sights-rocks">
-              <input class="checkbox__field checkbox__field--rocks" type="checkbox" name="sights-rocks" id="sights-rocks" value="rocks" checked>
-              <span class="checkbox__text">Красные скалы</span>
+            <label class="sights" for="sights-rocks">
+              <input class="sights__field sights__field--rocks" type="checkbox" name="sights-rocks" id="sights-rocks" value="rocks" checked>
+              <span class="sights__text">Красные скалы</span>
             </label>
         </div>
 
-        <div class="list feedback__response">
-          <h2 class="list__title">Опишите свои эмоции:</h2>
-            <label class="list__response response" for="text-of-feedback">
-            <textarea class="response__text" id="text-of-feedback" name="text-of-feedback" rows="5" cols="20" placeholder="Опишите подробно все свои восторги"></textarea>
+        <div class="response">
+          <h2 class="response__title">Опишите свои эмоции:</h2>
+            <label class="response__item" for="text-of-feedback">
+              <textarea class="response__text" id="text-of-feedback" name="text-of-feedback" rows="5" cols="20" placeholder="Опишите подробно все свои восторги"></textarea>
             </label>
         </div>
         <button type="submit" class="feedback__button button">Отправить отзыв</button>
       </form>
-      </div>
     </main>
 
     <footer class="page-footer">
@@ -150,7 +153,7 @@
       </div>
     </footer>
 
-    <section class="modal modal-failure">
+    <section class="modal-failure">
       <div class="container">
       <div class="modal__wrapper">
         <h2 class="modal__title" >Что-то пошло не так!</h2>
@@ -160,7 +163,7 @@
       </div>
     </section>
 
-    <section class="modal modal-success">
+    <section class="modal-success">
       <div class="container">
       <div class="modal__wrapper">
         <h2 class="modal__title">Ваш отзыв отправлен!</h2>

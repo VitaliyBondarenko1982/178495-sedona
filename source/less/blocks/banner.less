@@ -1,25 +1,38 @@
 @import "../variables";
 
 .banner {
-  &__image {
+  &__image--photo {
+    margin: 0 auto;
     height: 389px;
     width: auto;
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+}
+  &__wrapper {
+    width: 320px;
+    margin: 0 auto;
   }
-  &__title {
+
+  &__title--photo {
+    display: block;
+    padding-top: 22px;
+    padding-bottom: 12px;
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
-    padding: 24px 30px;
-    padding-bottom: 6px;
   }
-  &__description {
+  &__description--photo {
+    padding: 0 25px;
+    padding-bottom: 33px;
     font-size: 14px;
-    padding: 6px 30px;
+    font-weight: 400;
+    line-height: 24px;
   }
 }
 
 @media (min-width: @tablet-width) {
-  .banner {
+ banner {
     margin-bottom: 44px;
   }
   .banner__image {
@@ -27,16 +40,36 @@
     width: auto;
   }
   .banner__title {
-    font-size: 21px;
+    font-size: 30px;
     padding: 24px 160px;
     padding-top: 26px;
     padding-bottom: 10px;
   }
+
   .banner__description {
     padding-top: 0px;
   }
-}
+  .banner__wrapper {
+    width: 768px;
+    margin: 0 auto;
+  }
 
+  .banner__title--photo {
+    padding: 0 160px;
+    padding-top: 48px;
+    padding-bottom: 4px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .banner__description--photo {
+    padding: 0 165px;
+    padding-bottom: 53px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
 @media (min-width: @desktop-width) {
   .banner {
     margin-bottom: 44px;
@@ -53,4 +86,24 @@
   .banner__description {
     padding-top: 0px;
   }
+  .banner__image--photo {
+    width: 1200px;
+    margin-bottom: 62px;
+  }
+  .banner__title--photo {
+    padding: 0 160px;
+    padding-top: 48px;
+    padding-bottom: 4px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .banner__description--photo {
+    padding: 0 165px;
+    padding-bottom: 26px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
 }
+
