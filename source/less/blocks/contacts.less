@@ -2,22 +2,138 @@
 @import "../variables";
 
 .contacts {
-  font-family: "PT Sans";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 26px;
+  font-weight: 700;
   background-color: #ffffff;
-  color: #333333;
   text-transform: uppercase;
-
+  &__wrapper {
+    width: 280px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  &__title {
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+    margin-top: -17px;
+    margin-bottom: 3px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: -6px;
+  }
   &__field {
     font-size: 18px;
     font-weight: 700;
     background-color: #f2f2f2;
     color: #000000;
+    border: none;
+    width: auto;
+    padding: 19px;
   }
+  &__field:hover {
+    background-color: #e5e5e5;
+  }
+  &__field:active {
+    background-color: #ffffff;
+    border: 4px solid #e5e5e5;
+    padding: 15px;
+  }
+  &__text {
+    display: block;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+    font-weight: 400;
+    width: auto;
+    text-align: left;
+    padding-top: 16px;
+    padding-left: 20px;
+    padding-bottom: 9px;
+
+  }
+
 
   &__field::placeholder {
     color: #000000;
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 26px;
   }
 }
+
+@media (min-width: @tablet-width) {
+   .contacts {
+      width: 648px;
+      margin-bottom: 55px;
+    &__title {
+    font-size: 21px;
+    margin-top: -8px;
+    }
+    &__wrapper {
+    width: 648px;
+    padding: 0 60px;
+    margin: 0 auto;
+  }
+    &__item {
+      width: 648px;
+    }
+    &__text {
+    text-align: left;
+    padding-top: 19px;
+    &--email {
+      padding-top: 23px;
+    }
+    }
+  }
+}
+@media (min-width: @desktop-width) {
+  .contacts {
+    width:960px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+
+    &__wrapper {
+    width: 960px;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__item {
+      width: 488px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+    }
+   &__item--tel {
+      width: 398px;
+      }
+   &__title {
+    width: 650px;
+    margin: 0 auto;
+    margin-bottom: 74px;
+    }
+    &__field {
+    width: 277px;
+    padding: 19px;
+    flex-grow: 1;
+  }
+  &__text {
+   width: 72px;
+   flex-grow: 1;
+   padding-left:0px;
+   padding-right: 10px;
+  }
+  &__text--email {
+    width: 150px;
+    flex-grow: 1;
+  }
+
+  &__text--hidden {
+   display: none;
+  }
+  }
+}
+

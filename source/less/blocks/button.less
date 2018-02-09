@@ -1,7 +1,7 @@
 
 @import "../variables";
+
 .button {
-  font-family: "PT Sans";
   font-size:21px;
   font-weight: 700;
   line-height: 26px;
@@ -9,4 +9,23 @@
   background-color: #81b3d2;
   border:none;
   color: #ffffff;
+&__feedback {
+    font-size:21px;
+    padding: 16px 48px;
+    font-family: "PT Sans", sans-serif;
+  }
+}
+
+@media (min-width: @tablet-width) {
+
+.button__feedback {
+    padding: 16px 75px 16px 65px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+.button__feedback {
+    padding: 16px 145px 16px 150px;
+  }
 }

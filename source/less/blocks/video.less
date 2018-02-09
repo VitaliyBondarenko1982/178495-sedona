@@ -37,8 +37,11 @@
   &__title {
     font-size: 30px;
     line-height: 30px;
-    padding-top: 7px;
-    margin-top: 60px;
+    padding-top: 0px;
+    margin-top: 63px;
+    margin-bottom: 29px;
+    padding-right: 15px;
+    box-sizing: border-box;
   }
 
   &__description {
@@ -57,14 +60,21 @@
 @media (min-width: @desktop-width) {
     .video {
   &__wrapper {
-    width: 800px;
+    width: 1200px;
     margin: 0 auto;
     }
+  &__title {
+    margin-top: 72px;
+    }
+    &__description {
+    padding: 0 390px;
+    margin-bottom: 71px;
+  }
 
   &__image {
     width: 800px;
   }
-  }
+}
 }
 
 

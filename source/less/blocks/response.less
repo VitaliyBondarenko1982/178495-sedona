@@ -1,18 +1,81 @@
 @import "../variables";
 
 .response {
-
+  background-color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 44px;
+&__wrapper {
+    width: 280px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  &__title {
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+    margin-top: 48px;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+  }
   &__text {
-    font-family: "PT Sans";
     background-color: #f2f2f2;
     color: #000000;
     font-size: 18px;
-    font-weight: 700;
     line-height: 26px;
     border: none;
+    width: 255px;
+    font-weight: 700;
+    padding: 15px 5px 15px 20px;
+    min-height: 120px;
   }
 
   &__text::placeholder {
     color: #000000;
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+
+}
+@media (min-width: @tablet-width) {
+  .response {
+    &__wrapper {
+    width: 648px;
+    padding: 0 60px;
+    margin: 0 auto;
+    margin-bottom: 3px;
+  }
+    &__text {
+    width: 623px;
+    min-height: 120px;
+    }
+    &__title {
+    font-size: 21px;
+    margin-bottom: 60px;
+    }
+
   }
 }
+@media (min-width: @desktop-width) {
+  .response {
+    width: 960px;
+    margin: 0 auto;
+    &__wrapper {
+    width: 960px;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 47px;
+  }
+    &__text {
+    width: 935px;
+    min-height: 120px;
+    }
+    &__title {
+    margin-bottom: 58px;
+    min-height: 0;
+    }
+
+  }
+}
+

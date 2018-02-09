@@ -2,11 +2,119 @@
 @import "../variables";
 
 .sights {
-  font-family: "PT Sans";
-  font-size: 18px;
   font-weight: 700;
-  line-height: 26px;
   background-color: #ffffff;
-  color: #000000;
-  text-transform: none;
+  text-transform: uppercase;
+  &__wrapper {
+    width: 280px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  &__item {
+    display:flex;
+    margin-bottom: 30px;
+    cursor: pointer;
+    width: auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 20px;
+
+  }
+   &__field {
+    font-size: 18px;
+    font-weight: 700;
+    display: none;
+    border: none;
+    width: 45px;
+  }
+  &__title {
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+    margin-top: 55px;
+    margin-bottom: 3px;
+  }
+  &__text {
+    display: block;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+    width: 220px;
+    text-align: left;
+    padding-top: 0px;
+    padding-left: 77px;
+    text-transform: none;
+  }
+}
+@media (min-width: @tablet-width) {
+   .sights {
+      width: 458px;
+      margin: 0 auto;
+      margin-bottom: 26px;
+    &__title {
+    font-size: 21px;
+    margin-top: 4px;
+    margin-left: -7px;
+    width: 350px;
+    }
+    &__wrapper {
+    width: 458px;
+    padding: 0 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+    &__item {
+      width: 205px;
+      margin-bottom: 0;
+      &--bridge {
+        order: 1;
+      }
+      &--park {
+        order: 3;
+      }
+      &--hill {
+        order: 2;
+      }
+      &--rocks {
+        order: 4;
+      }
+    }
+    &__text {
+    text-align: left;
+    padding-top: 19px;
+    padding-left: 27px;
+
+    }
+  }
+}
+@media (min-width: @desktop-width) {
+    .sights {
+      width: 960px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+&__wrapper {
+    width: 960px;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+  &__title {
+    text-align: center;
+    width: 350px;
+    padding: 0 200px 0 312px;
+    margin-bottom: 6px;
+    }
+  &__item {
+    width: 155px;
+    padding-left: 57px;
+  }
+  &__item--hill {
+    width: 150px;
+    padding-left: 62px;
+  }
+  &__item--park {
+    width: 145px;
+  }
+}
 }

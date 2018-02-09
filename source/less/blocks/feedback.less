@@ -1,6 +1,5 @@
 @import "../variables";
 
-
 @media (min-width: @tablet-width) {
   .feedback {
   display: flex;
@@ -10,7 +9,9 @@
   }
 
   .feedback__name {
-    width: 300px
+    width: 300px;
+    min-height: 350px;
+    flex-grow: 1;
   }
   .feedback__contacts {
     width: 648px;
@@ -19,10 +20,12 @@
   .feedback__impression {
     width: 300px;
     order: -1;
+    flex-grow: 1;
+    min-height: 350px;
   }
 
   .feedback__sights {
-    width: 450px;
+    width: 458px;
   }
 
   .feedback__response {

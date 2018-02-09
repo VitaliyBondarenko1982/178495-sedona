@@ -41,88 +41,120 @@
     </header>
 
     <main class="page-main">
-      <section class="banner banner--photo">
+      <section class="banner">
+          <div class="banner__image"></div>
+      </section>
+
+      <section class="form-slogan">
         <div class="container">
-          <div class="banner__image--photo"></div>
-          <div class="banner__wrapper">
-            <h1 class="banner__title--photo">Оставьте свой отзыв</h1>
-            <p class="banner__description--photo">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <div class="form-slogan__wrapper">
+            <h1 class="form-slogan__title">Оставьте свой отзыв</h1>
+            <p class="form-slogan__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </div>
+        </div>
       </section>
 
       <form class="feedback"  method="get" action="https://echo.htmlacademy.ru">
 
-        <section class="name">
+        <section class="name feedback__name">
+          <div class="container">
+          <div class="name__wrapper">
           <h2 class="name__title">Представьтесь:</h2>
           <label class="name__item" for="name">
-            <input class="name__field" id="name" type="text" name="name" placeholder="Петр" required>
-            <span class="name__text">Имя*:</span>
+            <input class="name__field name__field--name" id="name" type="text" name="name" placeholder="Петр" required>
+            <span class="name__text name__text--name">Имя*:</span>
           </label>
           <label class="name__item" for="surname">
             <input class="name__field" id="surname" type="text" name="surname" placeholder="Иванов" required>
             <span class="name__text">Фамилия*:</span>
           </label>
           <label class="name__item" for="middle-name">
-            <input class="name__field" id="middle-name" type="text" name="middle-name" placeholder="Александрович" required>
-            <span class="name__text">Отчество*:</span>
+            <input class="name__field" id="middle-name" type="text" name="middle-name" placeholder="Александрович">
+            <span class="name__text">Отчество:</span>
           </label>
+        </div>
+      </div>
         </section>
 
-        <section class="contacts">
+        <section class="contacts feedback__contacts">
+          <div class="container">
+          <div class="contacts__wrapper">
           <h2 class="contacts__title">Контактная информация:</h2>
-          <label class="contacts__item" for="tel">
+          <label class="contacts__item contacts__item--tel" for="tel">
             <input class="contacts__field" type="tel" name="tel" id="tel" placeholder="Введите телефон" required>
-            <span class="contacts__text">Контактный телефон*:</span>
+            <span class="contacts__text contacts__text--tel"><span class="contacts__text--hidden">Контактный</span>телефон*:</span>
           </label>
-          <label class="contacts__item" for="email">
+          <label class="contacts__item contacts__item--email" for="email">
             <input class="contacts__field" type="email" name="email" id="email" placeholder="Введите e-mail" required>
-            <span class="contacts__text">Электронная почта*:</span>
+            <span class="contacts__text contacts__text--email">Электронная почта*:</span>
           </label>
+          </div>
+      </div>
         </section>
 
-        <div class="impression">
+        <section class="impression feedback__impression">
+          <div class="container">
+          <div class="impression__wrapper">
           <h2 class="impression__title">Ваше общее впечатление:</h2>
             <label class="impression__item" for="impression-good">
               <input class="impression__field impression__field--good" type="radio" name="impression-good" id="impression-good" value="good" checked>
               <span class="impression__text">Скорее положительное</span>
             </label>
-            <label class="impression__item" for="impression-bad">
+            <label class="impression__item impression__item--bad" for="impression-bad">
               <input class="impression__field impression__field--bad" type="radio" name="impression-bad" id="impression-bad" value="bad">
               <span class="impression__text">Скорее отрицательное</span>
             </label>
-            <label class="impression__item" for="impression-not-answer">
+            <label class="impression__item impression__item--not-answer" for="impression-not-answer">
               <input class="impression__field impression__field--not-answer" type="radio" name="impression-not-answer" id="impression-not-answer" value="not-answer">
               <span class="impression__text">Затрудняюсь ответить</span>
             </label>
-         </div>
+            </div>
+      </div>
+         </section>
 
-        <div class="sights">
+        <section class="sights feedback__sights">
+          <div class="container">
+          <div class="sights__wrapper">
           <h2 class="sights__title">Посещенные достопримечательности:</h2>
-            <label class="sights__item" for="sights-bridge">
+            <label class="sights__item sights__item--bridge" for="sights-bridge">
               <input class="sights__field sights__field--bridge" type="checkbox" name="sights-bridge" id="sights-bridge" value="bridge" checked>
               <span class="sights__text">Мост Дьявола</span>
             </label>
-            <label class="sights" for="sights-park">
+            <label class="sights__item sights__item--park" for="sights-park">
               <input class="sights__field sights__field--park" type="checkbox" name="sights-park" id="sights-park" value="park" checked>
               <span class="sights__text">Слайд-парк</span>
             </label>
-            <label class="sights" for="sights-hill">
+            <label class="sights__item sights__item--hill" for="sights-hill">
               <input class="sights__field sights__field--hill" type="checkbox" name="sights-hill" id="sights-hill" value="hill">
               <span class="sights__text">Гора-Колокол</span>
             </label>
-            <label class="sights" for="sights-rocks">
+            <label class="sights__item sights__item--rocks" for="sights-rocks">
               <input class="sights__field sights__field--rocks" type="checkbox" name="sights-rocks" id="sights-rocks" value="rocks" checked>
               <span class="sights__text">Красные скалы</span>
             </label>
-        </div>
+            </div>
+      </div>
+        </section>
 
-        <div class="response">
+        <section class="response feedback__response">
+          <div class="container">
+          <div class="response__wrapper">
           <h2 class="response__title">Опишите свои эмоции:</h2>
             <label class="response__item" for="text-of-feedback">
               <textarea class="response__text" id="text-of-feedback" name="text-of-feedback" rows="5" cols="20" placeholder="Опишите подробно все свои восторги"></textarea>
             </label>
-        </div>
-        <button type="submit" class="feedback__button button">Отправить отзыв</button>
+
+            </div>
+      </div>
+        </section>
+        <section class="button-form">
+          <div class="container">
+            <div class="button-form__wrapper">
+                <button type="submit" class="button button__feedback">Отправить отзыв</button>
+                <span class="button-form__required">* &#8212; Обязательные поля</span>
+            </div>
+            <div class="container">
+        </section>
       </form>
     </main>
 
@@ -155,20 +187,22 @@
 
     <section class="modal-failure">
       <div class="container">
-      <div class="modal__wrapper">
-        <h2 class="modal__title" >Что-то пошло не так!</h2>
-        <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="modal__button button" type="button">Ok</button>
+      <div class="modal-failure__wrapper">
+        <h2 class="modal-failure__title" >Что-то пошло не так!</h2>
+        <p class="modal-failure__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal-failure__button" type="button">Ok</button>
       </div>
       </div>
     </section>
 
     <section class="modal-success">
       <div class="container">
-      <div class="modal__wrapper">
-        <h2 class="modal__title">Ваш отзыв отправлен!</h2>
-        <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-        <button class="modal__button button" type="button">Закрыть окно</button>
+      <div class="modal-success__wrapper">
+        <h2 class="modal-success__title">Ваш отзыв отправлен!</h2>
+        <p class="modal-success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="modal-success__block">
+        <button class="modal-success__button" type="button">Закрыть окно</button>
+        </div>
       </div>
     </div>
     </section>

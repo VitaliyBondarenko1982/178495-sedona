@@ -1,11 +1,89 @@
 @import "../variables";
 
 .impression {
-  font-family: "PT Sans";
-  font-size: 18px;
   font-weight: 700;
-  line-height: 26px;
   background-color: #ffffff;
-  color: #000000;
-  text-transform: none;
+  text-transform: uppercase;
+  &__wrapper {
+    width: 280px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  &__item {
+    display:flex;
+    margin-bottom: -6px;
+    cursor: pointer;
+    width: auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 25px;
+  }
+   &__field {
+    font-size: 18px;
+    font-weight: 700;
+    display: none;
+    border: none;
+    width: 45px;
+  }
+  &__title {
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+    margin-top: 50px;
+    margin-bottom: 3px;
+  }
+  &__text {
+    display: block;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+    width: 220px;
+    text-align: left;
+    padding-top: 0px;
+    padding-left: 77px;
+    text-transform: none;
+  }
 }
+@media (min-width: @tablet-width) {
+   .impression {
+    width: 300px;
+    margin-bottom: 70px;
+   &__title {
+    font-size: 21px;
+    margin-top: 60px;
+    margin-left: 8px;
+  }
+  &__item {
+    margin-top: 63px;
+  }
+  &__text {
+  padding-left: 83px;
+  }
+  &__item--bad {
+    margin-top: 32px;
+  }
+  &__item--not-answer {
+    margin-top: 34px;
+  }
+}
+}
+@media (min-width: @desktop-width) {
+  .impression {
+    width: 400px;
+    margin-bottom: 60px;
+    &__wrapper {
+    width: 400px;
+    padding: 0 20px;
+    margin: 0 auto;
+    }
+   &__title {
+    margin-top: 45px;
+    margin-left: 68px;
+  }
+  &__text {
+  padding-left: 80px;
+  text-align: center;
+  }
+}
+}
+

@@ -1,0 +1,42 @@
+
+@import "../variables";
+
+.button-form {
+    width: 320px;
+    margin: 0 auto;
+ &__required {
+    display: none;
+ }
+}
+
+ @media (min-width: @tablet-width) {
+ .button-form {
+    width: 648px;
+    margin: 0 auto;
+  &__wrapper {
+    width: 648px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__required {
+    display: block;
+    width: 170px;
+    font-size:14px;
+    line-height: 26px;
+    padding-top: 18px;
+}
+}
+}
+@media (min-width: @desktop-width) {
+ .button-form {
+    width: 960px;
+    margin: 0 auto;
+  &__wrapper {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+}
