@@ -7,33 +7,41 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
   </head>
+
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седона">
-      </a>
+      <div class="container">
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button"></button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a>Главная</a>
+          <ul class="main-nav__list site-list-1">
+            <li class="site-list-1__item">
+              <a class="site-list-1__link">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a href="photo.html">Фото и видео</a>
+            <li class="site-list-1__item">
+              <a class="site-list-1__link" href="photo.html">Фото и видео</a>
             </li>
-            <li class="site-list__item">
-              <a href="form.html">Форма отзыва</a>
+          </ul>
+          <ul class="main-nav__list site-list-2">
+            <li class="site-list-2__item">
+              <a class="site-list-2__link" href="form.html">Форма отзыва</a>
             </li>
-            <li class="site-list__item">
-              <a href="#">HTML Academy</a>
+            <li class="site-list-2__item">
+              <a class="site-list-2__link" href="#">HTML Academy</a>
             </li>
           </ul>
         </div>
       </nav>
+      <div class="page-header__logo">
+        <a>
+          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седона">
+        </a>
+      </div>
+      </div>
     </header>
     
     <main class="page-main">
+      <div class="container">
       <section class="page-main__advantages advantages">
         <div class="advantages__wrapper">
           <div class="advantages__banner"></div>
@@ -70,27 +78,28 @@
             </div>
             <img class="advantages__image" src="img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Фото моста Дьявола">
           </li>
-          <li class="advantages__item advantages__item--third-reason">
+          <li class="advantages__item advantages__item-without-photo">
             <h3 class="advantages__title">Небольшая площадь</h3>
             <p class="advantages__number">&#8212; №3 &#8212;</p>
             <p class="advantages__description">Все интересные места находятся очень близко</p>
           </li>
-          <li class="advantages__item advantages__item--fourth-reason">
+          <li class="advantages__item advantages__item-without-photo">
             <h3 class="advantages__title">Красивая дорога</h3>
             <p class="advantages__number">&#8212; №4 &#8212;</p>
             <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="advantages__item advantages__item--fifth-reason">
+          <li class="advantages__item advantages__item-without-photo">
             <h3 class="advantages__title">Мало туристов</h3>
             <p class="advantages__number">&#8212; №5 &#8212;</p>
             <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ul>
       </div>
+    </div>
       </section>
 
       <section class="page-main__interest interest">
-        <div class="interest__wrapper">
+        <div class="container">
           <h2 class="interest__title">Заинтересовались?</h2>
           <p class="interest__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <button class="interest__button button"><a href="find-hotels.html">Найти гостиницу</a></button>
@@ -98,30 +107,36 @@
       </section>
 
       <section class="map">
-        <img class="map__image" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта">
+        <div class="container">
+          <img class="map__image" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта">
+        </div>
       </section>
     </main>
 
     <footer class="page-footer">
+      <div class="container">
+        <div class="footer-wrapper">
       <div class="hashtag">
         <p class="hashtag__visit">#visitsedona</p>
       </div>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="">Седона в твиттере</a>
+            <a class="social__link social__link--twitter" href="">ТВ</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="">Седона в фейсбуке</a>
+            <a class="social__link social__link--facebook" href="">ФБ</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="">Седона на Youtube</a>
+            <a class="social__link social__link--youtube" href="">Y</a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </div>
       </div>
     </footer>
   </body>
