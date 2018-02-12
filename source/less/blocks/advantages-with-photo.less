@@ -35,7 +35,7 @@
   }
   &__image {
     display: block;
-    width: 100%;
+    width: 320px;
     height: 260px;
     margin-top: -15px;
     margin-bottom: -20px;
@@ -48,6 +48,7 @@
 @media (min-width: @tablet-width) {
   .advantages-with-photo {
     width: 768px;
+    height: 256px;
   }
   .advantages-with-photo .container {
     display: flex;
@@ -63,10 +64,12 @@
     }
   .advantages-with-photo__image {
      width: 512px;
-     height: 256px;
+     height: 100%;
      align-self: center;
      flex-grow:2;
+     margin-top: 0px;
     }
+
   .advantages-with-photo--second .container {
     flex-direction: row-reverse;
     }
@@ -88,6 +91,7 @@
     width: 1200px;
     margin: 0 auto;
   }
+
   .advantages-with-photo .container {
    width: 1200px;
     margin: 0 auto;

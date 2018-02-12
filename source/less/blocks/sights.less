@@ -2,15 +2,27 @@
 @import "../variables";
 
 .sights {
+  position: relative;
   font-weight: 700;
   background-color: #ffffff;
   text-transform: uppercase;
+   &::before{
+    content: "";
+  position: absolute;
+  left: center;
+  top: -15px;
+  width: 320px;
+  height: 1px;
+  background-color: #e5e5e5;
+  transform: translateX(-160px);
+  }
   &__wrapper {
     width: 280px;
     padding: 0 20px;
     margin: 0 auto;
   }
   &__item {
+    position: relative;
     display:flex;
     margin-bottom: 30px;
     cursor: pointer;
@@ -19,6 +31,16 @@
     padding-bottom: 12px;
     margin-top: 20px;
 
+  }
+   &__item::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 56px;
+  height: 56px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
   }
    &__field {
     font-size: 18px;
@@ -51,6 +73,21 @@
       width: 458px;
       margin: 0 auto;
       margin-bottom: 26px;
+       &::before{
+  left: 70px;
+    top: 25px;
+  width: 125px;
+  height: 1px;
+  }
+   &::after{
+  content: "";
+  position: absolute;
+  background-color: #e5e5e5;
+  left: 425px;
+  top: 25px;
+  width: 125px;
+  height: 1px;
+  }
     &__title {
     font-size: 21px;
     margin-top: 4px;
@@ -81,6 +118,10 @@
         order: 4;
       }
     }
+    &__item::before {
+  left: -60px;
+  top: 15px;
+  }
     &__text {
     text-align: left;
     padding-top: 19px;
@@ -91,9 +132,19 @@
 }
 @media (min-width: @desktop-width) {
     .sights {
-      width: 960px;
+    width: 960px;
       margin: 0 auto;
       margin-bottom: 20px;
+    &::before{
+  left: 100px;
+  top: 25px;
+  width: 280px;
+  }
+   &::after{
+  left: 630px;
+  top: 25px;
+  width: 280px;
+  }
 &__wrapper {
     width: 960px;
     padding: 0;
@@ -115,6 +166,10 @@
   }
   &__item--park {
     width: 145px;
+  }
+  &__item::before {
+  left: -60px;
+  top: 15px;
   }
 }
 }

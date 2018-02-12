@@ -34,7 +34,11 @@
       </nav>
       <div class="page-header__logo">
         <a>
-          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седона">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="Логотип Седона">
+          </picture>
         </a>
       </div>
       </div>
@@ -61,7 +65,11 @@
                 <p class="advantages-with-photo__number">&#8212; №1 &#8212;</p>
                 <p class="advantages-with-photo__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
-              <img class="advantages-with-photo__image" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Фото отеля">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/main-city-desktop.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/main-city-tablet.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+                <img class="advantages-with-photo__image" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg" alt="Фото города">
+              </picture>
             </div>
           </section>
 
@@ -89,7 +97,11 @@
                 <p class="advantages-with-photo__number">&#8212; №2 &#8212;</p>
                 <p class="advantages-with-photo__description advantages-with-photo__description--second">Да по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
-              <img class="advantages-with-photo__image" src="img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Фото моста Дьявола">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                <img class="advantages-with-photo__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg" alt="Фото моста Дьявола">
+              </picture>
             </div>
           </section>
 
@@ -124,7 +136,12 @@
       </section>
 
       <section class="map">
-          <iframe class="map__image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13565749244!2d-111.83015809006805!3d34.85444381567572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0ZbQt9C-0L3QsCA4NjMzNiwg0KHQv9C-0LvRg9GH0LXQvdGWINCo0YLQsNGC0Lgg0JDQvNC10YDQuNC60Lg!5e0!3m2!1suk!2sua!4v1517849377539" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe class="map__interactive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13565749244!2d-111.83015809006805!3d34.85444381567572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0ZbQt9C-0L3QsCA4NjMzNiwg0KHQv9C-0LvRg9GH0LXQvdGWINCo0YLQsNGC0Lgg0JDQvNC10YDQuNC60Lg!5e0!3m2!1suk!2sua!4v1517849377539" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <picture>
+                <source media="(min-width: 1200px)" srcset="img/bg-map-desktop.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/bg-map-tablet.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+                <img class="map__image" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg" alt="Карта">
+          </picture>
      </section>
 
     </main>

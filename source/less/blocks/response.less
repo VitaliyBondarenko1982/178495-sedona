@@ -1,9 +1,20 @@
 @import "../variables";
 
 .response {
+  position: relative;
   background-color: #ffffff;
   font-weight: 700;
   margin-bottom: 44px;
+   &::before{
+    content: "";
+  position: absolute;
+  left: center;
+  top: -15px;
+  width: 320px;
+  height: 1px;
+  background-color: #e5e5e5;
+  transform: translateX(-160px);
+  }
 &__wrapper {
     width: 280px;
     padding: 0 20px;
@@ -40,6 +51,21 @@
 }
 @media (min-width: @tablet-width) {
   .response {
+  &::before{
+  left: 220px;
+  top: 60px;
+  width: 125px;
+  height: 1px;
+  }
+   &::after{
+  content: "";
+  position: absolute;
+  background-color: #e5e5e5;
+  left: 580px;
+  top: 60px;
+  width: 125px;
+  height: 1px;
+  }
     &__wrapper {
     width: 648px;
     padding: 0 60px;
@@ -61,6 +87,16 @@
   .response {
     width: 960px;
     margin: 0 auto;
+    &::before{
+  left: 170px;
+  top: 55px;
+  width: 280px;
+  }
+   &::after{
+  left: 690px;
+  top: 55px;
+  width: 280px;
+  }
     &__wrapper {
     width: 960px;
     padding: 0;

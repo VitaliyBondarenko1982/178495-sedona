@@ -2,9 +2,20 @@
 @import "../variables";
 
 .contacts {
+  position: relative;
   font-weight: 700;
   background-color: #ffffff;
   text-transform: uppercase;
+   &::before{
+    content: "";
+  position: absolute;
+  left: center;
+  top: -15px;
+  width: 320px;
+  height: 1px;
+  background-color: #e5e5e5;
+  transform: translateX(-160px);
+  }
   &__wrapper {
     width: 280px;
     padding: 0 20px;
@@ -18,11 +29,13 @@
     margin-bottom: 3px;
   }
   &__item {
+    position: relative;
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: -6px;
   }
   &__field {
+
     font-size: 18px;
     font-weight: 700;
     background-color: #f2f2f2;
@@ -31,6 +44,17 @@
     width: auto;
     padding: 19px;
   }
+  &__item::before {
+  content: "";
+  position: absolute;
+  left: 221px;
+  top: 51px;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  background-image: url("../../img/icon-phone.svg");
+  backgrond-position: 50% 50%;
+}
   &__field:hover {
     background-color: #e5e5e5;
   }
@@ -66,6 +90,12 @@
    .contacts {
       width: 648px;
       margin-bottom: 55px;
+       &::before{
+  right: -220px;
+  top: 5px;
+  width: 125px;
+  height: 1px;
+  }
     &__title {
     font-size: 21px;
     margin-top: -8px;
@@ -78,6 +108,13 @@
     &__item {
       width: 648px;
     }
+    &__item::before {
+  left: 589px;
+  top: 57px;
+  }
+  &__item--tel::before {
+  top: 55px;
+  }
     &__text {
     text-align: left;
     padding-top: 19px;
@@ -89,6 +126,11 @@
 }
 @media (min-width: @desktop-width) {
   .contacts {
+  &::before{
+  right: -220px;
+  top: 15px;
+  width: 280px;
+  }
     width:960px;
     margin: 0 auto;
     margin-bottom: 55px;

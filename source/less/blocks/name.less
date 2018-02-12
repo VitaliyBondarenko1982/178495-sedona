@@ -1,10 +1,21 @@
 @import "../variables";
 
 .name {
+  position: relative;
   min-height: 305px;
   font-weight: 700;
   background-color: #ffffff;
   text-transform: uppercase;
+  &::before{
+    content: "";
+  position: absolute;
+  left: center;
+  top: -15px;
+  width: 320px;
+  height: 1px;
+  background-color: #e5e5e5;
+  transform: translateX(-160px);
+  }
   &__wrapper {
     width: 280px;
     margin: 0 auto;
@@ -66,6 +77,12 @@
    .name {
     width: 300px;
     margin-bottom: 70px;
+     &::before{
+ right: 220px;
+  top: 85px;
+  width: 1px;
+  height: 292px;
+  }
    &__title {
     font-size: 21px;
     text-align: left;
@@ -90,6 +107,10 @@
 }
 @media (min-width: @desktop-width) {
 .name {
+ &::before{
+  right: 439px;
+  top: 85px;
+  }
     width: 400px;
     margin-bottom: 60px;
     &__wrapper {
