@@ -32,7 +32,7 @@
     margin-top: 20px;
 
   }
-   &__item::before {
+   &__text::before {
   content: "";
   position: absolute;
   left: 0px;
@@ -41,6 +41,26 @@
   height: 56px;
   background-color: #f2f2f2;
   border-radius: 5px;
+  z-index: 1;
+  }
+  &__field:hover ~ &__text::before{
+  background-color: #e5e5e5;
+  }
+  &__field:active ~ &__text::before{
+  background-color: #d5d5d5;
+  }
+&__field + &__icon-tick {
+  position: absolute;
+  top: 10px;
+  left: 13px;
+  z-index: 2;
+  display: none;
+}
+  &__field:checked + &__icon-tick{
+    display: block;
+  }
+  &__field:active ~ &__icon-tick {
+    fill: #a4a4a4;
   }
    &__field {
     font-size: 18px;
@@ -68,14 +88,15 @@
     text-transform: none;
   }
 }
+
 @media (min-width: @tablet-width) {
    .sights {
       width: 458px;
       margin: 0 auto;
       margin-bottom: 26px;
        &::before{
-  left: 70px;
-    top: 25px;
+  left: 65px;
+    top: 30px;
   width: 125px;
   height: 1px;
   }
@@ -83,8 +104,8 @@
   content: "";
   position: absolute;
   background-color: #e5e5e5;
-  left: 425px;
-  top: 25px;
+  left: 430px;
+  top: 30px;
   width: 125px;
   height: 1px;
   }
@@ -128,7 +149,16 @@
     padding-left: 27px;
 
     }
+     &__text::before {
+     top: 24px;
+     left: -57px;
   }
+  &__field + &__icon-tick {
+  top: 28px;
+  left: -42px;
+  z-index: 2;
+}
+}
 }
 @media (min-width: @desktop-width) {
     .sights {
@@ -136,13 +166,13 @@
       margin: 0 auto;
       margin-bottom: 20px;
     &::before{
-  left: 100px;
-  top: 25px;
+  left: 160px;
+    top: 27px;
   width: 280px;
   }
    &::after{
-  left: 630px;
-  top: 25px;
+  left: 680px;
+  top: 26px;
   width: 280px;
   }
 &__wrapper {
@@ -167,9 +197,32 @@
   &__item--park {
     width: 145px;
   }
-  &__item::before {
+  &__text::before {
   left: 0px;
   top: 15px;
+  }
+  &__text--park::before {
+  left: 10px;
+  }
+  &__text--rocks::before,
+  &__text--hill::before {
+  left: 8px;
+  }
+  &__field + &__icon-tick--bridge {
+  top: 27px;
+  left: 15px;
+  }
+  &__field + &__icon-tick--hill {
+  top: 27px;
+  left: 23px;
+  }
+  &__field + &__icon-tick--park {
+  top: 27px;
+  left: 25px;
+  }
+  &__field + &__icon-tick--rocks {
+  top: 27px;
+  left: 22px;
   }
 }
 }

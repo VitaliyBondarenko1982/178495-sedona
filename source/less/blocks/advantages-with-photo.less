@@ -4,9 +4,15 @@
     font-family: "PT Sans", sans-serif;
     width: 320px;
     margin: 0 auto;
+
   &__item {
     background-color: #81b3d2;
     min-height: 211px;
+  }
+  &__item--first {
+    background-image: url("../img/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
   }
   &__title {
     color:#ffffff;
@@ -61,7 +67,12 @@
   .advantages-with-photo__item {
       width: 256px;
       flex-grow: 1;
+      height: 256px;
     }
+    .advantages-with-photo__item--first {
+    background-image: none;
+
+  }
   .advantages-with-photo__image {
      width: 512px;
      height: 256px;
