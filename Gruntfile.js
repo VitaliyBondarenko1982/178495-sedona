@@ -51,7 +51,7 @@ module.exports = function(grunt) {
         files: ["source/less/**/*.less"],
         tasks: ["less", "postcss", "csso"]
       }
-    }
+    },
 
     csso: {
       style: {
@@ -62,7 +62,7 @@ module.exports = function(grunt) {
           "build/css/style.min.css": ["build/css/style.css"]
         }
       }
-    }
+    },
 
     imagemin: {
       images: {
@@ -70,12 +70,12 @@ module.exports = function(grunt) {
           optimizationLevel: 3,
           progressive: true
         },
-        files [{
+        files: [{
           expand: true,
           src: ["source/img/**/*.{png, jpg, svg}"]
         }]
       }
-    }
+    },
 
     cwebp: {
       images: {
@@ -87,7 +87,7 @@ module.exports = function(grunt) {
           src: ["source/img/**/*.{png, jpg}"]
         }]
       }
-    }
+    },
 
     svgstore: {
       options: {
@@ -98,7 +98,7 @@ module.exports = function(grunt) {
           "build/img/sprite.svg": ["source/img/icon-*.svg"]
         }
       }
-    }
+    },
 
     posthtml: {
       options: {
@@ -113,7 +113,7 @@ module.exports = function(grunt) {
           dest: "build"
         }]
       }
-    }
+    },
 
     copy: {
       build: {
@@ -123,12 +123,13 @@ module.exports = function(grunt) {
           src: [
             "fonts/**/*.{woff,woff2}",
             "img/**",
-            "js/**"
+            "js/**",
+            "*.html"
           ],
           dest: "build"
         }]
       }
-    }
+    },
 
     clean: {
       build: ["build"]

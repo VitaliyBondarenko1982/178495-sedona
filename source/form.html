@@ -36,7 +36,7 @@
           </div>
         </nav>
         <div class="page-header__logo">
-          <a>
+          <a href="https://htmlacademy.ru/intensive/adaptive">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
@@ -69,11 +69,11 @@
           <div class="container">
             <div class="name__wrapper">
               <h2 class="name__title">Представьтесь:</h2>
-              <label class="name__item" for="name">
+              <label class="name__item name__item--name" for="name">
                 <input class="name__field name__field--name" id="name" type="text" name="name" placeholder="Петр" required>
                 <span class="name__text name__text--name">Имя*:</span>
               </label>
-              <label class="name__item" for="surname">
+              <label class="name__item name__item--surname" for="surname">
                 <input class="name__field" id="surname" type="text" name="surname" placeholder="Иванов" required>
                 <span class="name__text">Фамилия*:</span>
                 </label>
@@ -106,15 +106,15 @@
             <div class="impression__wrapper">
               <h2 class="impression__title">Ваше общее впечатление:</h2>
                 <label class="impression__item" for="impression-good">
-                  <input class="impression__field impression__field--good" type="radio" name="impression-good" id="impression-good" value="good" checked>
+                  <input class="impression__field impression__field--good" type="radio" name="impression" id="impression-good" value="good" checked>
                   <span class="impression__text">Скорее положительное</span>
                 </label>
                 <label class="impression__item impression__item--bad" for="impression-bad">
-                  <input class="impression__field impression__field--bad" type="radio" name="impression-bad" id="impression-bad" value="bad">
-                  span class="impression__text">Скорее отрицательное</span>
+                  <input class="impression__field impression__field--bad" type="radio" name="impression" id="impression-bad" value="bad">
+                  <span class="impression__text">Скорее отрицательное</span>
                 </label>
                 <label class="impression__item impression__item--not-answer" for="impression-not-answer">
-                  <input class="impression__field impression__field--not-answer" type="radio" name="impression-not-answer" id="impression-not-answer" value="not-answer">
+                  <input class="impression__field impression__field--not-answer" type="radio" name="impression" id="impression-not-answer" value="not-answer">
                   <span class="impression__text">Затрудняюсь ответить</span>
                 </label>
             </div>
@@ -174,7 +174,7 @@
               <button type="submit" class="button button__feedback">Отправить отзыв</button>
               <span class="button-form__required">* &#8212; Обязательные поля</span>
             </div>
-          <div class="container">
+          </div>
         </section>
       </form>
     </main>
