@@ -4,14 +4,13 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-
   &__logo {
     position: relative;
     height: 56px;
  }
   &__logo a {
     position: absolute;
-    z-index: 5;
+    z-index: 1;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -20,15 +19,14 @@
   .page-header {
     margin: 0 auto;
   }
-
   .page-header__logo {
     height: 0px;
   }
   .page-header__logo a {
     position: absolute;
     top: -56px;
-    z-index: 5;
-   }
+    z-index: 1;
+  }
 }
 
 

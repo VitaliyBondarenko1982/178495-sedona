@@ -1,21 +1,18 @@
 @import "../variables";
 
 .photo-slogan {
-    width: 320px;
-    margin: 0 auto;
-
+  width: 320px;
+  margin: 0 auto;
   &__wrapper {
     width: 320px;
     margin: 0 auto;
   }
-
   &__title {
     display: block;
     padding: 22px 25px 12px 25px;
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
-
   }
   &__description {
     padding: 0 24px;
@@ -26,26 +23,25 @@
     text-align: center;
   }
 }
+
 @media (min-width: @tablet-width) {
-    .photo-slogan {
+  .photo-slogan {
     width: 768px;
-
-  &__wrapper {
-    width: 768px;
-  }
-
-  &__title {
-    padding: 22px 25px 1px 25px;
-    font-size: 30px;
-  }
-  &__description {
-    padding: 0 165px;
-    margin-bottom: 70px;
+    &__wrapper {
+      width: 768px;
+    }
+    &__title {
+      padding: 22px 25px 1px 25px;
+      font-size: 30px;
+    }
+    &__description {
+      padding: 0 165px;
+      margin-bottom: 70px;
+    }
   }
 }
-}
+
 @media (min-width: @desktop-width) {
-
   .photo-slogan__title {
     padding: 22px 25px 4px 25px;
   }

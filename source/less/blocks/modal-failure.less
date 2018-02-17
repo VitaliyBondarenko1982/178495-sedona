@@ -14,21 +14,18 @@
   color: #000000;
   text-align: center;
   box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.5);
-
   &__wrapper {
     width: 280px;
     padding: 0;
     margin: 0 auto;
   }
   &__title {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
-  padding: 45px 30px 0px 30px;
-  margin-bottom: 30px;
-
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    padding: 45px 30px 0px 30px;
+    margin-bottom: 30px;
   }
-
   &__text {
     font-size: 14px;
     font-weight: 400;
@@ -37,7 +34,6 @@
     padding: 0px 30px;
     margin-bottom: 20px;
   }
-
   &__button {
     font-size:18px;
     font-weight: 700;
@@ -50,31 +46,29 @@
     margin-bottom: 35px;
   }
 }
+
 @media (min-width: @tablet-width) {
   .modal-failure {
-  transform: translateX(-200px);
-  min-height: 347px;
-  width: 400px;
-  &__wrapper {
-    width: 280px;
+    transform: translateX(-200px);
+    min-height: 347px;
+    width: 400px;
+    &__wrapper {
+      width: 280px;
+    }
+    &__title {
+      font-size: 30px;
+      line-height: 30px;
+      padding: 61px 15px 0px 15px;
+      margin-bottom: 36px;
+    }
+    &__text {
+      padding: 0px 0px;
+      margin-bottom: 35px;
+    }
+    &__button {
+      font-size:21px;
+      padding: 16px 120px;
+      margin-bottom: 49px;
+    }
   }
-  &__title {
-  font-size: 30px;
-  line-height: 30px;
-  padding: 61px 15px 0px 15px;
-  margin-bottom: 36px;
-
-  }
-
-  &__text {
-    padding: 0px 0px;
-    margin-bottom: 35px;
-  }
-
-  &__button {
-    font-size:21px;
-    padding: 16px 120px;
-    margin-bottom: 49px;
-  }
-}
 }

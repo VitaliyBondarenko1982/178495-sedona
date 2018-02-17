@@ -2,16 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-    <div style="display:none;">
+    <!--<div style="display:none;">
       <include src="build/img/sprite.svg"></include>
-    </div>
+    </div>-->
     <header class="page-header">
       <div class="container">
         <nav class="main-nav main-nav--opened main-nav--nojs">
@@ -49,10 +50,11 @@
 
     <main>
       <section class="index-banner">
-        <div class="index-banner__image"></div>
-        <svg class="index-banner__text" width="280" height="213">
-          <use xlink:href="img/sprite.svg#text-sedona-index"></use>
-        </svg>
+        <div class="index-banner__image">
+          <svg class="index-banner__text" width="280" height="213">
+            <use xlink:href="img/sprite.svg#text-sedona-index"></use>
+          </svg>
+        </div>
       </section>
 
       <section class="index-slogan">
@@ -172,7 +174,7 @@
               <li class="social__item">
                 <a class="social__link social__link--twitter" href="">
                   <svg class="social__icon-twitter" width="17" height="15">
-                    <use xlink:href="img/icon-twitter.svg#icon-twitter"></use>
+                    <use xlink:href="img/sprite.svg#icon-twitter"></use>
                   </svg>
                   <span class="visually-hidden">Cедона в Твиттере</span>
                 </a>
@@ -180,7 +182,7 @@
               <li class="social__item">
                 <a class="social__link social__link--facebook" href="">
                   <svg class="social__icon-facebook" width="9" height="19">
-                    <use xlink:href="img/icon-facebook.svg#icon-facebook"></use>
+                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
                   </svg>
                   <span class="visually-hidden">Седона в Фейсбуке</span>
                 </a>
@@ -188,7 +190,7 @@
               <li class="social__item">
                 <a class="social__link social__link--youtube" href="">
                   <svg class="social__icon-youtube" width="20" height="14">
-                    <use xlink:href="img/icon-youtube.svg#icon-youtube"></use>
+                    <use xlink:href="img/sprite.svg#icon-youtube"></use>
                   </svg>
                   <span class="visually-hidden">Седона на Youtube</span>
                 </a>
@@ -208,7 +210,7 @@
       </div>
     </footer>
     <script src="js/menu.js"></script>
-    <script src="/path/to/svg4everybody.js"></script>
-    <script>svg4everybody(); // run it now or whenever you are ready</script>
+    <!--<script src="js/svg4everybody.js"></script>
+    <script>svg4everybody();</script>-->
   </body>
 </html>

@@ -89,17 +89,6 @@ module.exports = function(grunt) {
       }
     },
 
-    svgstore: {
-      options: {
-        includeTitleElement: false
-      },
-      spite: {
-        files: {
-          "build/img/sprite.svg": ["source/img/icon-*.svg"]
-        }
-      }
-    },
-
     posthtml: {
       options: {
         use: [
@@ -109,7 +98,9 @@ module.exports = function(grunt) {
       html: {
         files: [{
           expand: true,
-          src: ["source/*.html"],
+          src: [
+          "*.html"
+          ],
           dest: "build"
         }]
       }
@@ -143,7 +134,6 @@ module.exports = function(grunt) {
       "less",
       "postcss",
       "csso",
-      "svgstore",
       "posthtml"
     ]);
 };
