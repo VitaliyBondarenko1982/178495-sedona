@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <div style="display:none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <header class="page-header">
+      <div class="container">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list-1">
+              <li class="site-list-1__item">
+                <a class="site-list-1__link" href="index.html">Главная</a>
+              </li>
+              <li class="site-list-1__item site-list-1__item--active">
+                <a class="site-list-1__link" href="#">Фото и видео</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list site-list-2">
+              <li class="site-list-2__item">
+                <a class="site-list-2__link" href="form.html">Форма отзыва</a>
+              </li>
+              <li class="site-list-2__item">
+                <a class="site-list-2__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="page-header__logo page-header__logo--photo">
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="Логотип Седона">
+            </picture>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="banner">
+        <div class="banner__image"></div>
+        <svg class="banner__text" width="229" height="39">
+          <use xlink:href="img/sprite.svg#text-sedona"></use>
+        </svg>
+      </section>
+
+      <section class="photo-slogan">
+        <div class="container">
+          <div class="photo-slogan__wrapper">
+            <h1 class="photo-slogan__title">Фото и видео</h1>
+            <p class="photo-slogan__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-photo">
+        <div class="container">
+          <div class="main-photo__item">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+              <img class="main-photo__image" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg" alt="Неродные просторы">
+            </picture>
+            <div class="main-photo__legend">
+              <div class="main-photo__description">
+                <h2 class="main-photo__title">Неродные просторы</h2>
+                <p class="main-photo__author">Автор фото: Борис</p>
+              </div>
+              <p class="main-photo__like">
+                <svg class="main-photo__icon-like" width="24" height="22">
+                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                </svg>
+                1350
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="another-photos">
+        <div class="container">
+          <div class="another-photos__wrapper">
+            <div class="another-photos__item">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                <img class="another-photos__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg" alt="Местная растительность">
+              </picture>
+              <div class="another-photos__legend">
+                <div class="another-photos__description">
+                  <h2 class="another-photos__title">Местная растительность</h2>
+                  <p class="another-photos__author">Автор фото: Сергей</p>
+                </div>
+                <p class="another-photos__like">
+                  <svg class="another-photos__icon-like" width="24" height="22">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                  143
+               </p>
+              </div>
+            </div>
+            <div class="another-photos__item">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                <img class="another-photos__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg" alt="Дорога на север">
+              </picture>
+              <div class="another-photos__legend">
+                <div class="another-photos__description">
+                  <h2 class="another-photos__title">Дорога на север</h2>
+                  <p class="another-photos__author">Автор фото: Петр</p>
+                </div>
+                <p class="another-photos__like another-photos__like--road">
+                  <svg class="another-photos__icon-like" width="24" height="22">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                  96
+                </p>
+              </div>
+            </div>
+            <div class="another-photos__item another-photos__item--bridge">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                <img class="another-photos__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg" alt="Мост дьявола">
+              </picture>
+              <div class="another-photos__legend">
+                <div class="another-photos__description">
+                  <h2 class="another-photos__title">Мост дьявола</h2>
+                  <p class="another-photos__author">Автор фото: Антон</p>
+                </div>
+                <p class="another-photos__like">
+                  <svg class="another-photos__icon-like" width="24" height="22">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                  254
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="video">
+        <div class="container">
+          <div class="video__wrapper">
+            <h2 class="video__title">Все еще сомневаетесь?</h2>
+            <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img class="video__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg" alt="Видео">
+            </picture>
+            <div class="video__player">
+              <div class="video__top-box">
+                <div class="video__scale">
+                  <div class="video__slider"></div>
+                </div>
+                <svg class="video__icon-video-replay" width="16" height="20">
+                  <use xlink:href="img/sprite.svg#icon-video-replay"></use>
+                </svg>
+                <svg class="video__icon-video-subtitles" width="32" height="20">
+                  <use xlink:href="img/sprite.svg#icon-video-subtitles"></use>
+                </svg>
+                <svg class="video__icon-video-fullscreen" width="20" height="20">
+                  <use xlink:href="img/sprite.svg#icon-video-fullscreen"></use>
+                </svg>
+              </div>
+              <div class="video__bottom-box">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="page-footer__wrapper">
+          <div class="page-footer__hashtag hashtag">
+            <p class="hashtag__visit">#visitsedona</p>
+          </div>
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--twitter" href="">
+                  <svg class="social__icon-twitter" width="17" height="15">
+                    <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                  </svg>
+                  <span class="visually-hidden">Cедона в Твиттере</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="">
+                  <svg class="social__icon-facebook" width="9" height="19">
+                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                  </svg>
+                  <span class="visually-hidden">Седона в Фейсбуке</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube" href="">
+                  <svg class="social__icon-youtube" width="20" height="14">
+                    <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                  </svg>
+                  <span class="visually-hidden">Седона на Youtube</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <b class="copyright__text">Разработано</b>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <svg class="copyright__icon" width="27" height="34">
+                <use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
+              </svg>
+              <span class="visually-hidden">HTML Academy</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody();</script>
+  </body>
+</html>

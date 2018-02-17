@@ -3,8 +3,7 @@
 .social {
   background-color: #ffffff;
   text-align: center;
-
-  &__list{
+  &__list {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -14,29 +13,57 @@
     justify-content: space-between;
     margin-bottom: 42px;
   }
-
   &__item {
-  width: 46px;
-  height: 48px;
-  background-color: #81b3d2;
+    position: relative;
+    width: 46px;
+    height: 48px;
+    background-color: #81b3d2;
   }
   &__link {
    text-decoration: none;
    color: #000000;
   }
+  &__item:hover {
+    background-color: #669ec0;
+  }
+  &__item:active {
+    background-color: #5496bd;
+  }
+  &__icon-twitter,
+  &__icon-facebook,
+  &__icon-youtube {
+    position: absolute;
+    fill: #ffffff;
+  }
+  &__icon-twitter:active,
+  &__icon-facebook:active,
+  &__icon-youtube:active {
+    fill: #88b6d1;
+  }
+  &__icon-twitter {
+    top: 15px;
+    left: 15px;
+  }
+  &__icon-facebook {
+    top: 13px;
+    left: 19px;
+  }
+  &__icon-youtube {
+    top: 16px;
+    left: 13px;
+  }
 }
+
 @media (min-width: @tablet-width) {
   .social {
     margin-top: 30px;
     margin-left: 115px;
-   }
+  }
 }
 
 @media (min-width: @desktop-width) {
-.social {
-
-     margin-left: 258px;
-   }
-
-}
+  .social {
+      margin-left: 258px;
+    }
+  }
 
