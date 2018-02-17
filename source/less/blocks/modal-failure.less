@@ -3,9 +3,9 @@
 .modal-failure {
   display: none;
   position: fixed;
-  top: 10px;
+  top: 1520px;
   left: 50%;
-  transform: translateX(-160px);
+  transform: translateX(-50%);
   min-height: 280px;
   width: 320px;
   margin: 0 auto;
@@ -49,9 +49,9 @@
 
 @media (min-width: @tablet-width) {
   .modal-failure {
-    transform: translateX(-200px);
     min-height: 347px;
     width: 400px;
+    top: 1420px;
     &__wrapper {
       width: 280px;
     }
@@ -70,5 +70,11 @@
       padding: 16px 120px;
       margin-bottom: 49px;
     }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .modal-failure {
+    top: 1390px;
   }
 }

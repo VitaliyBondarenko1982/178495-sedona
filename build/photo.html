@@ -7,10 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="picturefill.js" async></script>
   </head>
 
   <body>
-    <div style="display:none;">
+    <div style="display:none">
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header">
@@ -37,7 +41,7 @@
           </div>
         </nav>
         <div class="page-header__logo page-header__logo--photo">
-          <a href="https://htmlacademy.ru/intensive/adaptive">
+          <a href="index.html">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
@@ -52,7 +56,7 @@
       <section class="banner">
         <div class="banner__image"></div>
         <svg class="banner__text" width="229" height="39">
-          <use xlink:href="img/sprite.svg#text-sedona"></use>
+          <use xlink:href="img/sprite.svg#icon-text-sedona"></use>
         </svg>
       </section>
 
@@ -68,11 +72,13 @@
       <section class="main-photo">
         <div class="container">
           <div class="main-photo__item">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
-              <img class="main-photo__image" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg" alt="Неродные просторы">
-            </picture>
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                <img class="main-photo__image" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg" alt="Неродные просторы">
+              </picture>
+            </a>
             <div class="main-photo__legend">
               <div class="main-photo__description">
                 <h2 class="main-photo__title">Неродные просторы</h2>
@@ -93,11 +99,13 @@
         <div class="container">
           <div class="another-photos__wrapper">
             <div class="another-photos__item">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
-                <img class="another-photos__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg" alt="Местная растительность">
-              </picture>
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                  <img class="another-photos__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg" alt="Местная растительность">
+                </picture>
+              </a>
               <div class="another-photos__legend">
                 <div class="another-photos__description">
                   <h2 class="another-photos__title">Местная растительность</h2>
@@ -108,15 +116,17 @@
                     <use xlink:href="img/sprite.svg#icon-like"></use>
                   </svg>
                   143
-               </p>
+                </p>
               </div>
             </div>
             <div class="another-photos__item">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
-                <img class="another-photos__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg" alt="Дорога на север">
-              </picture>
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                  <img class="another-photos__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg" alt="Дорога на север">
+                </picture>
+              </a>
               <div class="another-photos__legend">
                 <div class="another-photos__description">
                   <h2 class="another-photos__title">Дорога на север</h2>
@@ -131,11 +141,13 @@
               </div>
             </div>
             <div class="another-photos__item another-photos__item--bridge">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-                <img class="another-photos__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg" alt="Мост дьявола">
-              </picture>
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                  <img class="another-photos__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg" alt="Мост дьявола">
+                </picture>
+              </a>
               <div class="another-photos__legend">
                 <div class="another-photos__description">
                   <h2 class="another-photos__title">Мост дьявола</h2>

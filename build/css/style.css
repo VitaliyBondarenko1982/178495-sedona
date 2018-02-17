@@ -1086,8 +1086,6 @@ main-nav__list {
   margin: 0 auto;
   margin-bottom: 48px;
   text-align: center;
-}
-.interest a {
   font-family: "PT Sans", sans-serif;
   font-size: 21px;
   font-weight: 700;
@@ -1095,7 +1093,8 @@ main-nav__list {
   display: block;
   text-decoration: none;
   color: #ffffff;
-  padding: 16px 38px 16px 38px;
+  width: 280px;
+  padding: 16px 0px;
 }
 @media (min-width: 768px) {
   .interest {
@@ -1112,8 +1111,8 @@ main-nav__list {
     padding: 0 185px;
     padding-bottom: 28px;
   }
-  .interest__button a {
-    padding: 16px 130px 16px 125px;
+  .interest__button {
+    width: 460px;
   }
 }
 @media (min-width: 1200px) {
@@ -2911,10 +2910,10 @@ main-nav__list {
 .modal-failure {
   display: none;
   position: fixed;
-  top: 10px;
+  top: 1520px;
   left: 50%;
-  -webkit-transform: translateX(-160px);
-          transform: translateX(-160px);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   min-height: 280px;
   width: 320px;
   margin: 0 auto;
@@ -2958,10 +2957,9 @@ main-nav__list {
 }
 @media (min-width: 768px) {
   .modal-failure {
-    -webkit-transform: translateX(-200px);
-            transform: translateX(-200px);
     min-height: 347px;
     width: 400px;
+    top: 1420px;
   }
   .modal-failure__wrapper {
     width: 280px;
@@ -2982,13 +2980,18 @@ main-nav__list {
     margin-bottom: 49px;
   }
 }
+@media (min-width: 1200px) {
+  .modal-failure {
+    top: 1390px;
+  }
+}
 .modal-success {
   display: none;
   position: fixed;
-  top: 10px;
+  top: 1880px;
   left: 50%;
-  -webkit-transform: translateX(-160px);
-          transform: translateX(-160px);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   min-height: 348px;
   width: 320px;
   margin: 0 auto;
@@ -3045,11 +3048,10 @@ main-nav__list {
 }
 @media (min-width: 768px) {
   .modal-success {
-    -webkit-transform: translateX(-324px);
-            transform: translateX(-324px);
     min-height: 323px;
     width: 648px;
     margin: 0 auto;
+    top: 1270px;
   }
   .modal-success__wrapper {
     width: 648px;
@@ -3072,10 +3074,9 @@ main-nav__list {
 }
 @media (min-width: 1200px) {
   .modal-success {
-    -webkit-transform: translateX(-320px);
-            transform: translateX(-320px);
     min-height: 348px;
     width: 640px;
+    top: 1120px;
   }
   .modal-success__wrapper {
     width: 640px;
