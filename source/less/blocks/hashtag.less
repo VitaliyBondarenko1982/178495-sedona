@@ -1,9 +1,34 @@
+@import "../variables";
+
+
 .hashtag {
-  font-family: "PT Sans";
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
   background-color: #ffffff;
   color: #000000;
   text-transform: uppercase;
+  &__visit {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+    padding-top: 6px;
+    padding-bottom: 16px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .hashtag {
+    margin-top: 14px;
+    &__visit {
+      margin-left: 59px;
+      padding-bottom: 35px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hashtag {
+    &__visit {
+      margin-left: 170px;
+    }
+  }
 }

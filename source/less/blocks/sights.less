@@ -1,0 +1,227 @@
+
+@import "../variables";
+
+.sights {
+  position: relative;
+  font-weight: 700;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  &::before {
+    content: "";
+    position: absolute;
+    left: center;
+    top: -15px;
+    width: 320px;
+    height: 1px;
+    background-color: #e5e5e5;
+    transform: translateX(-160px);
+  }
+  &__wrapper {
+    width: 280px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  &__item {
+    position: relative;
+    display:flex;
+    margin-bottom: 30px;
+    cursor: pointer;
+    width: auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 20px;
+  }
+  &__text::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 56px;
+    height: 56px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    z-index: 1;
+  }
+  &__field:hover ~ &__text::before  {
+    background-color: #e5e5e5;
+  }
+  &__field:active ~ &__text::before{
+    background-color: #d5d5d5;
+  }
+  &__field + &__icon-tick {
+    position: absolute;
+    top: 10px;
+    left: 13px;
+    z-index: 2;
+    display: none;
+  }
+  &__field:checked + &__icon-tick{
+    display: block;
+  }
+  &__field:active ~ &__icon-tick {
+    fill: #a4a4a4;
+  }
+  &__field {
+    font-size: 18px;
+    font-weight: 700;
+    display: none;
+    border: none;
+    width: 45px;
+  }
+  &__title {
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+    margin-top: 55px;
+    margin-bottom: 3px;
+  }
+  &__text {
+    display: block;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+    width: 220px;
+    text-align: left;
+    padding-top: 0px;
+    padding-left: 77px;
+    text-transform: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .sights {
+    width: 458px;
+    margin: 0 auto;
+    margin-bottom: 26px;
+    &::before {
+      left: 65px;
+      top: 30px;
+      width: 125px;
+      height: 1px;
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      background-color: #e5e5e5;
+      left: 430px;
+      top: 30px;
+      width: 125px;
+      height: 1px;
+    }
+    &__title {
+      font-size: 21px;
+      margin-top: 4px;
+      margin-left: -7px;
+      width: 350px;
+    }
+    &__wrapper {
+      width: 458px;
+      padding: 0 60px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    &__item {
+      width: 205px;
+      margin-bottom: 0;
+      &--bridge {
+        order: 1;
+      }
+      &--park {
+        order: 3;
+      }
+      &--hill {
+        order: 2;
+      }
+      &--rocks {
+        order: 4;
+      }
+    }
+    &__item::before {
+      left: -60px;
+      top: 15px;
+    }
+    &__text {
+      text-align: left;
+      padding-top: 19px;
+      padding-left: 27px;
+    }
+    &__text::before {
+      top: 24px;
+      left: -57px;
+    }
+    &__field + &__icon-tick {
+      top: 28px;
+      left: -42px;
+      z-index: 2;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .sights {
+    width: 960px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    &::before {
+      left: 160px;
+      top: 27px;
+      width: 280px;
+    }
+    &::after{
+      left: 680px;
+      top: 26px;
+      width: 280px;
+    }
+    &__wrapper {
+      width: 960px;
+      padding: 0;
+      flex-wrap: wrap;
+    }
+    &__title {
+      text-align: center;
+      width: 350px;
+      padding: 0 200px 0 312px;
+      margin-bottom: 6px;
+    }
+    &__item {
+      width: 155px;
+      padding-left: 57px;
+    }
+    &__item--hill {
+      width: 150px;
+      padding-left: 62px;
+    }
+    &__item--park {
+      width: 145px;
+    }
+    &__text::before {
+      left: 0px;
+      top: 15px;
+    }
+    &__text--park::before {
+      left: 10px;
+    }
+    &__text--rocks::before,
+    &__text--hill::before {
+      left: 8px;
+    }
+    &__field + &__icon-tick--bridge {
+      top: 27px;
+      left: 15px;
+    }
+    &__field + &__icon-tick--hill {
+      top: 27px;
+      left: 23px;
+    }
+    &__field + &__icon-tick--park {
+      top: 27px;
+      left: 25px;
+    }
+    &__field + &__icon-tick--rocks {
+      top: 27px;
+      left: 22px;
+    }
+  }
+}

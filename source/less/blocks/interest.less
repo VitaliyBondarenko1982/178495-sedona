@@ -1,42 +1,84 @@
+@import "../variables";
+
 .interest {
-  font-family: "PT Sans";
-  font-size:21px;
-  font-weight: 700;
-  line-height: 26px;
+  width: 320px;
+  margin: 0 auto;
   background-color: #ffffff;
   color: #000000;
   text-transform: uppercase;
-
+  &__title {
+    text-align: center;
+    display: block;
+    margin-top: 26px;
+    font-size:21px;
+    font-weight: 700;
+    line-height: 26px;
+  }
   &__description {
     font-size:14px;
     font-weight: 400;
     line-height: 24px;
     color: #333333;
+    padding: 0 25px;
+    padding-bottom: 21px;
+    padding-top: 3px;
+    text-align: center;
   }
   &__button {
     background-color: #81b3d2;
     border:none;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    text-align: center;
   }
   a {
+    font-family: "PT Sans", sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    display: block;
     text-decoration:none;
     color: #ffffff;
+    padding: 16px 38px 16px 38px;
   }
 }
 
 @media (min-width: @tablet-width){
-  .interest__title,
+  .interest {
+  width: 768px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  }
+  .interest__title {
+    margin-top: 56px;
+    font-size:30px;
+    line-height: 30px;
+  }
   .interest__description {
-    width: 768px;
-    margin: 0 auto;
-    }
+    padding: 0 185px;
+    padding-bottom: 28px;
+  }
   .interest__button {
-    margin: 0 auto;
+    a {
+      padding: 16px 130px 16px 125px;
+    }
   }
 }
 
-@media (min-width: @desktop-width){
-  .interest__title,
-  .interest__description {
+@media (min-width: @desktop-width) {
+  .interest {
   width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  }
+  .interest__title {
+    margin-top: 54px;
+    font-size:30px;
+    line-height: 30px;
+  }
+  .interest__description {
+    padding: 0 401px;
+    padding-bottom: 34px;
   }
 }
+

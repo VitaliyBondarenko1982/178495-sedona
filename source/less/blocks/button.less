@@ -1,10 +1,40 @@
+
+@import "../variables";
+
 .button {
-  font-family: "PT Sans";
-  font-size:21px;
+  font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
   background-color: #81b3d2;
-  border:none;
+  border: none;
   color: #ffffff;
+  cursor: pointer;
+  &__feedback {
+    font-size: 21px;
+    padding: 16px 48px;
+    font-family: "PT Sans", sans-serif;
+  }
+  &:hover {
+  background-color: #669ec0;
+  }
+  &:active {
+  background-color: #5496bd;
+  color: rgba(256, 256, 256, 0.3);
+  }
+  &:disabled {
+  background-color: #e5e5e5;
+  }
+}
+
+@media (min-width: @tablet-width) {
+.button__feedback {
+    padding: 16px 75px 16px 65px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+.button__feedback {
+    padding: 16px 145px 16px 150px;
+  }
 }
