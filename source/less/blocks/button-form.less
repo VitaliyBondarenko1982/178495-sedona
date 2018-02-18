@@ -2,44 +2,45 @@
 @import "../variables";
 
 .button-form {
-    width: 320px;
-    margin: 0 auto;
-    margin-bottom: 68px;
- &__required {
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 68px;
+  &__required {
     display: none;
- }
+  }
 }
 
- @media (min-width: @tablet-width) {
- .button-form {
+@media (min-width: @tablet-width) {
+  .button-form {
     width: 648px;
     margin: 0 auto;
     margin-bottom: 67px;
-  &__wrapper {
-    width: 648px;
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
+    &__wrapper {
+      width: 648px;
+      margin: 0 auto;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__required {
+      display: block;
+      width: 170px;
+      font-size: 14px;
+      line-height: 26px;
+      padding-top: 18px;
+    }
   }
-  &__required {
-    display: block;
-    width: 170px;
-    font-size:14px;
-    line-height: 26px;
-    padding-top: 18px;
 }
-}
-}
+
 @media (min-width: @desktop-width) {
- .button-form {
+  .button-form {
     width: 960px;
     margin: 0 auto;
     margin-bottom: 72px;
-  &__wrapper {
-    width: 960px;
-    margin: 0 auto;
-    padding: 0;
+    &__wrapper {
+      width: 960px;
+      margin: 0 auto;
+      padding: 0;
+    }
   }
-}
 }

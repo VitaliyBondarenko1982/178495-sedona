@@ -5,17 +5,17 @@
   background-color: #ffffff;
   font-weight: 700;
   margin-bottom: 44px;
-   &::before{
+  &::before {
     content: "";
-  position: absolute;
-  left: center;
-  top: -15px;
-  width: 320px;
-  height: 1px;
-  background-color: #e5e5e5;
-  transform: translateX(-160px);
+    position: absolute;
+    left: center;
+    top: -15px;
+    width: 320px;
+    height: 1px;
+    background-color: #e5e5e5;
+    transform: translateX(-160px);
   }
-&__wrapper {
+  &__wrapper {
     width: 280px;
     padding: 0 20px;
     margin: 0 auto;
@@ -39,79 +39,76 @@
     padding: 15px 5px 15px 20px;
     min-height: 120px;
   }
-
   &__text::placeholder {
     color: #000000;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 26px;
   }
-
-
 }
+
 @media (min-width: @tablet-width) {
   .response {
-  &::before{
-  left: 220px;
-  top: 60px;
-  width: 125px;
-  height: 1px;
-  }
-   &::after{
-  content: "";
-  position: absolute;
-  background-color: #e5e5e5;
-  left: 580px;
-  top: 60px;
-  width: 125px;
-  height: 1px;
-  }
+    &::before {
+      left: 220px;
+      top: 60px;
+      width: 125px;
+      height: 1px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #e5e5e5;
+      left: 580px;
+      top: 60px;
+      width: 125px;
+      height: 1px;
+    }
     &__wrapper {
-    width: 648px;
-    padding: 0 60px;
-    margin: 0 auto;
-    margin-bottom: 3px;
-  }
+      width: 648px;
+      padding: 0 60px;
+      margin: 0 auto;
+      margin-bottom: 3px;
+    }
     &__text {
-    width: 623px;
-    min-height: 120px;
+      width: 623px;
+      min-height: 120px;
     }
     &__title {
-    font-size: 21px;
-    margin-bottom: 60px;
+      font-size: 21px;
+      margin-bottom: 60px;
     }
-
   }
 }
+
 @media (min-width: @desktop-width) {
   .response {
     width: 960px;
     margin: 0 auto;
     &::before{
-  left: 160px;
-  top: 60px;
-  width: 280px;
-  }
-   &::after{
-  left: 680px;
-  top: 60px;
-  width: 280px;
-  }
+      left: 160px;
+      top: 60px;
+      width: 280px;
+    }
+    &::after{
+      left: 680px;
+      top: 60px;
+      width: 280px;
+    }
     &__wrapper {
-    width: 960px;
-    padding: 0;
-    margin: 0 auto;
-    margin-bottom: 47px;
-  }
+      width: 960px;
+      padding: 0;
+      margin: 0 auto;
+      margin-bottom: 47px;
+    }
     &__text {
-    width: 935px;
-    min-height: 120px;
+      width: 935px;
+      min-height: 120px;
     }
     &__title {
-    margin-bottom: 58px;
-    min-height: 0;
+      margin-bottom: 58px;
+      min-height: 0;
     }
-
   }
 }
 

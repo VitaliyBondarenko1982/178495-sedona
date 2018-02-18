@@ -5,16 +5,16 @@
   &__wrapper {
     width: 320px;
     margin: 0 auto;
-    }
-  &::before{
+  }
+  &::before {
     content: "";
-  position: absolute;
-  left: center;
-  top: -22px;
-  width: 320px;
-  height: 1px;
-  background-color: #e5e5e5;
-  transform: translateX(-160px);
+    position: absolute;
+    left: center;
+    top: -22px;
+    width: 320px;
+    height: 1px;
+    background-color: #e5e5e5;
+    transform: translateX(-160px);
   }
   &__title {
     font-size: 18px;
@@ -22,7 +22,6 @@
     line-height: 26px;
     padding-top: 12px;
   }
-
   &__description {
     font-size: 14px;
     font-weight: 400;
@@ -31,7 +30,6 @@
     padding-top: 11px;
     padding-bottom: 21px;
   }
-
   &__image {
     padding-bottom: 107px;
   }
@@ -88,15 +86,15 @@
   &__icon-video-fullscreen:active {
     fill: #c1c1c1;
   }
-  &__icon-video-replay{
+  &__icon-video-replay {
     top: 66px;
     left: 25px;
   }
-  &__icon-video-subtitles{
+  &__icon-video-subtitles {
     top: 68px;
     left: 174px;
   }
-  &__icon-video-fullscreen{
+  &__icon-video-fullscreen {
     top: 68px;
     left: 237px;
   }
@@ -104,114 +102,108 @@
 
 @media (min-width: @tablet-width) {
   .video {
-  &__wrapper {
-    width: 768px;
-    margin: 0 auto;
+    &__wrapper {
+      width: 768px;
+      margin: 0 auto;
     }
     &::before{
-    display: none;
+      display: none;
     }
-  &__title {
-    font-size: 30px;
-    line-height: 30px;
-    padding-top: 0px;
-    margin-top: 63px;
-    margin-bottom: 29px;
-    padding-right: 15px;
-    box-sizing: border-box;
-  }
-
-  &__description {
-    padding: 0 175px;
-    padding-bottom: 57px;
-  }
-
-  &__image {
-    width: 648px;
-    height: 500px;
-    padding-bottom: 40px;
-  }
-  &__player {
-   width: 648px;
-   height: 93px;
-   top: 586px;
-   left: 50%;
-  transform: translateX(-324px);
-  }
-  &__top-box {
-    width: 648px;
-    height: 93px;
-    padding: 45px 165px 45px 93px;
-  }
-  &__bottom-box {
-    display: none;
-  }
-  &__scale {
-    width: 389px;
-  }
-  &__slider{
-    left: 114px;
-  }
-  &__icon-video-replay,
-  &__icon-video-subtitles,
-  &__icon-video-fullscreen {
-    fill: #ffffff;
-  }
-
-  &__icon-video-replay{
-    top: 35px;
-    left: 34px;
-  }
-  &__icon-video-subtitles{
-    top: 37px;
-    left: 524px;
-  }
-  &__icon-video-fullscreen{
-    top: 36px;
-    left: 587px;
-  }
+    &__title {
+      font-size: 30px;
+      line-height: 30px;
+      padding-top: 0px;
+      margin-top: 63px;
+      margin-bottom: 29px;
+      padding-right: 15px;
+      box-sizing: border-box;
+    }
+    &__description {
+      padding: 0 175px;
+      padding-bottom: 57px;
+    }
+    &__image {
+      width: 648px;
+      height: 500px;
+      padding-bottom: 40px;
+    }
+    &__player {
+      width: 648px;
+      height: 93px;
+      top: 586px;
+      left: 50%;
+      transform: translateX(-324px);
+    }
+    &__top-box {
+      width: 648px;
+      height: 93px;
+      padding: 45px 165px 45px 93px;
+    }
+    &__bottom-box {
+      display: none;
+    }
+    &__scale {
+      width: 389px;
+    }
+    &__slider{
+      left: 114px;
+    }
+    &__icon-video-replay,
+    &__icon-video-subtitles,
+    &__icon-video-fullscreen {
+      fill: #ffffff;
+    }
+    &__icon-video-replay {
+      top: 35px;
+      left: 34px;
+    }
+    &__icon-video-subtitles{
+      top: 37px;
+      left: 524px;
+    }
+    &__icon-video-fullscreen{
+      top: 36px;
+      left: 587px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
-    .video {
-  &__wrapper {
-    width: 1200px;
-    margin: 0 auto;
+  .video {
+    &__wrapper {
+      width: 1200px;
+      margin: 0 auto;
     }
-  &__title {
-    margin-top: 68px;
+    &__title {
+      margin-top: 68px;
     }
     &__description {
-    padding: 0 390px;
-    margin-bottom: 71px;
+      padding: 0 390px;
+      margin-bottom: 71px;
+    }
+    &__image {
+      width: 800px;
+      padding-bottom: 82px;
+    }
+    &__player {
+      width: 800px;
+      top: 586px;
+      left: 50%;
+      transform: translateX(-400px);
+    }
+    &__top-box {
+      width: 800px;
+    }
+    &__scale {
+      width: 540px;
+    }
+    &__icon-video-subtitles{
+      left: 674px;
+    }
+    &__icon-video-fullscreen{
+      left: 737px;
+    }
   }
-
-  &__image {
-    width: 800px;
-    padding-bottom: 82px;
-  }
-  &__player {
-   width: 800px;
-   top: 586px;
-   left: 50%;
-  transform: translateX(-400px);
-  }
-  &__top-box {
-    width: 800px;
-  }
-
-  &__scale {
-    width: 540px;
-  }
-
-  &__icon-video-subtitles{
-    left: 674px;
-  }
-  &__icon-video-fullscreen{
-    left: 737px;
-  }
-}
 }
 
 

@@ -4,17 +4,14 @@
 .features {
   background-color: #ffffff;
   color: #000000;
-
   &__item {
     width: 320px;
     margin: 0 auto;
     position: relative;
   }
-
   &__item:last-child {
     padding-bottom: 7px;
   }
-
   &__title {
     padding: 38px 40px 0px 70px;
     font-weight: 700;
@@ -32,26 +29,24 @@
   }
   &__icon-house,
   &__icon-gift,
-  &__icon-burger
-  {
+  &__icon-burger {
     position: absolute;
     fill: #81b3d2;
     top: 0;
     left: 0;
   }
-   &__icon-house {
+  &__icon-house {
     top: 28px;
     left: 25px;
-   }
+  }
   &__icon-gift {
     top: 28px;
     left: 25px;
   }
-  &__icon-burger{
+  &__icon-burger {
     top: 33px;
     left: 22px;
   }
-
   &__title--souvenirs {
     margin-top: -24px;
   }
@@ -61,114 +56,107 @@
 }
 
 @media (min-width: @tablet-width) {
-    .features {
-      margin-bottom: -8px;
-    }
-    .features .container {
+  .features {
+    margin-bottom: -8px;
+  }
+  .features .container {
     display: flex;
     width: 768px;
     margin: 0 auto;
     flex-wrap: wrap;
     min-height: 330px;
-   }
-
-.features__item {
-      width: 256px;
-      min-height: 330px;
-      flex-grow: 1;
-    }
+  }
+  .features__item {
+    width: 256px;
+    min-height: 330px;
+    flex-grow: 1;
+  }
   .features__item::before {
-      top: 50px;
+    top: 50px;
     left: 90px;
     width: 80px;
     height: 80px;
   }
-.features__title {
-  padding: 138px 40px 0px 92px;
-  font-size: 21px;
-  line-height: 26px;
-  margin-bottom: 25px;
-}
-.features__title--souvenirs {
-  margin-top: 21px;
-  margin-left: -16px;
-}
-.features__title--food {
-  margin-top: 20px;
-  margin-left: 16px;
-}
-.features__icon-house{
+  .features__title {
+    padding: 138px 40px 0px 92px;
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 25px;
+  }
+  .features__title--souvenirs {
+    margin-top: 21px;
+    margin-left: -16px;
+  }
+  .features__title--food {
+    margin-top: 20px;
+    margin-left: 16px;
+  }
+  .features__icon-house {
     width: 75px;
     height: 72px;
     top: 61px;
     left: 90px;
   }
   .features__icon-gift {
-   width: 64px;
+    width: 64px;
     height: 75px;
     top: 60px;
     left: 92px;
   }
   .features__icon-burger {
-       width: 77px;
+    width: 77px;
     height: 68px;
     top: 65px;
     left: 90px;
   }
-.features__description {
-box-sizing: border-box;
-padding: 0 46px;
-text-align: center;
-}
-.features__description--food {
-  padding: 0 49px;
-}
-.features__item--apartment {
-  order: 0;
-}
-.features__item--souvenirs {
-  order: 2;
+  .features__description {
+    box-sizing: border-box;
+    padding: 0 46px;
+    text-align: center;
+  }
+  .features__description--food {
+    padding: 0 49px;
+  }
+  .features__item--apartment {
+    order: 0;
+  }
+  .features__item--souvenirs {
+    order: 2;
     margin-top: 0px;
+  }
+  .features__item--food {
+    order: 1;
+    margin-top: 0;
+  }
 }
-.features__item--food {
-  order: 1;
-  margin-top: 0;
-}
-}
-@media (min-width: @desktop-width) {
 
+@media (min-width: @desktop-width) {
   .features {
     min-height: 330px;
     margin-bottom: -3px;
-   }
-   .features .container {
+  }
+  .features .container {
     width: 1200px;
-   }
-
-.features__item {
-      width: 400px;
-      min-height: 330px;
-    }
-    .features__item::before {
-      top: 60px;
+  }
+  .features__item {
+    width: 400px;
+    min-height: 330px;
+  }
+  .features__item::before {
+    top: 60px;
     left: 165px;
   }
-.features__title {
-padding: 140px 30px 0px 165px;
-box-sizing: border-box;
-}
-.features__item--apartment {
-
-}
-.features__description--souvenirs {
-  padding: 0 70px;
-}
-.features__description--souvenirs::first-line {
-  padding: 0 75px;
-}
-.features__item--food {
-}
-.features__icon-house{
+  .features__title {
+    padding: 140px 30px 0px 165px;
+    box-sizing: border-box;
+  }
+  .features__description--souvenirs {
+    padding: 0 70px;
+  }
+  .features__description--souvenirs::first-line {
+    padding: 0 75px;
+  }
+  .features__icon-house {
     left: 159px;
   }
   .features__icon-gift {
