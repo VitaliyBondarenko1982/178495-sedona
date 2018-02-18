@@ -14,7 +14,7 @@ body {
   min-width: 320px;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 400;
@@ -758,7 +758,7 @@ main-nav__list {
 .advantages-with-photo__item--first {
   background-image: url("../img/bg-triangle.svg");
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: 50% -20px;
 }
 .advantages-with-photo__title {
   color: #ffffff;
@@ -1113,6 +1113,7 @@ main-nav__list {
   }
   .interest__button {
     width: 460px;
+    margin-bottom: 56px;
   }
 }
 @media (min-width: 1200px) {
@@ -1129,6 +1130,9 @@ main-nav__list {
   .interest__description {
     padding: 0 401px;
     padding-bottom: 34px;
+  }
+  .interest__button {
+    margin-bottom: 66px;
   }
 }
 .map {
@@ -1179,6 +1183,8 @@ main-nav__list {
   }
 }
 .page-footer {
+  width: 320px;
+  margin: 0 auto;
   min-height: 243px;
 }
 .page-footer__wrapper {
@@ -1190,7 +1196,8 @@ main-nav__list {
 }
 @media (min-width: 768px) {
   .page-footer {
-    width: 768;
+    width: 768px;
+    margin: 0 auto;
     min-height: 120px;
   }
   .page-footer__wrapper {
@@ -1206,6 +1213,7 @@ main-nav__list {
 @media (min-width: 1200px) {
   .page-footer {
     width: 1200px;
+    margin: 0 auto;
     min-height: 120px;
   }
   .page-footer__wrapper {
@@ -1236,7 +1244,7 @@ main-nav__list {
 }
 @media (min-width: 1200px) {
   .hashtag__visit {
-    margin-left: 170px;
+    margin-left: 130px;
   }
 }
 .social {
