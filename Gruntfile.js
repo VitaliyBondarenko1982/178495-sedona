@@ -77,6 +77,17 @@ module.exports = function(grunt) {
       }
     },
 
+    svgstore: {
+      options: {
+        includeTitleElement: false
+      },
+      sprite: {
+        files: {
+          "build/img/sprite.svg": ["source/img/icon-*.svg"]
+        }
+      }
+    },
+
     cwebp: {
       images: {
         options: {
@@ -86,17 +97,6 @@ module.exports = function(grunt) {
           expand: true,
           src: ["source/img/**/*.{png, jpg}"]
         }]
-      }
-    },
-
-    svgstore: {
-      options: {
-        includeTitleElement: false
-      },
-      spite: {
-        files: {
-          "build/img/sprite.svg": ["source/img/icon-*.svg"]
-        }
       }
     },
 
