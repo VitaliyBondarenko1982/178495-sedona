@@ -10,7 +10,7 @@
     content: "";
     position: absolute;
     left: center;
-    top: -20px;
+    top: -17px;
     width: 320px;
     height: 1px;
     background-color: #e5e5e5;
@@ -25,14 +25,14 @@
     font-size: 18px;
     line-height: 26px;
     color: #000000;
-    margin-top: -17px;
-    margin-bottom: 3px;
+    margin-top: -19px;
+    margin-bottom: 6px;
   }
   &__item {
     position: relative;
     display: flex;
     flex-direction: column-reverse;
-    margin-bottom: -6px;
+    margin-bottom: -3px;
   }
   &__field {
     font-size: 18px;
@@ -42,14 +42,15 @@
     border: none;
     width: auto;
     padding: 15px;
+    padding-left: 17px;
     border: 4px solid #f2f2f2;
     height: 20px;
   }
   &__item::before {
     content: "";
     position: absolute;
-    left: 221px;
-    top: 50px;
+    left: 223px;
+    top: 47px;
     width: 58px;
     height: 58px;
     background-color: #e6e6e6;
@@ -77,12 +78,12 @@
     width: auto;
     text-align: left;
     padding-top: 14px;
-    padding-left: 20px;
-    padding-bottom: 9px;
+    padding-left: 23px;
+    padding-bottom: 8px;
   }
   &__field::placeholder {
     color: #000000;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 18px;
     line-height: 26px;
   }
@@ -101,6 +102,7 @@
     &__title {
       font-size: 21px;
       margin-top: -8px;
+      margin-bottom: 4px;
     }
     &__wrapper {
       width: 648px;
@@ -115,7 +117,7 @@
       top: 58px;
     }
     &__item--tel::before {
-      top: 54px;
+      top: 53px;
     }
     &__text {
       text-align: left;
@@ -160,7 +162,7 @@
       flex-direction: row-reverse;
     }
     &__item--tel {
-      width: 398px;
+      width: 400px;
     }
     &__title {
       width: 650px;
@@ -170,6 +172,9 @@
     &__field {
       width: 277px;
       flex-grow: 1;
+      &--email {
+        width: 264px;
+      }
     }
     &__text {
       width: 72px;
@@ -178,11 +183,17 @@
       padding-right: 10px;
     }
     &__text--email {
-      width: 150px;
+      width: 160px;
+      padding-left: 8px;
+      margin-top: -5px;
+      box-sizing: border-box;
       flex-grow: 1;
     }
-    &__text--hidden {
+    &__hidden {
       display: none;
+    }
+    &__item--tel::before {
+      left: 343px;
     }
   }
 }

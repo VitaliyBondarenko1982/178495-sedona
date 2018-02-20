@@ -18,6 +18,15 @@ main-nav__list {
   .main-nav--closed .site-list-2__item {
     display: none;
   }
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+  .main-nav--nojs .site-list-1__item {
+    display: block;
+    }
+  .main-nav--nojs .site-list-2__item {
+    display: block;
+    }
 }
 .main-nav__toggle {
   position: absolute;
@@ -70,10 +79,6 @@ main-nav__list {
 }
 .main-nav--nojs .main-nav__toggle {
   display: none;
-}
-.main-nav--nojs .main-nav__wrapper {
-  position: static;
-  min-height: 0;
 }
 
 @media (min-width: @tablet-width) {

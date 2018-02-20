@@ -16,7 +16,8 @@
   <body>
     <header class="page-header">
       <div class="container">
-        <nav class="main-nav main-nav--opened main-nav--closed main-nav--nojs">
+        <!--при отсутствии js остается установлен класс main-nav--nojs (меню в мобильной версии по умолчанию открыто, кнопки, работающие на js, скрыты) класс main-nav--nojs при наличии js будет удален классы main-nav--closed и main-nav--opened переключают состояние меню и внешний вид кнопки при наличии js-->
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list-1">
@@ -93,10 +94,10 @@
               <h2 class="contacts__title">Контактная информация:</h2>
               <label class="contacts__item contacts__item--tel" for="tel">
                 <input class="contacts__field" type="tel" name="tel" id="tel" placeholder="Введите телефон" required>
-                <span class="contacts__text contacts__text--tel"><span class="contacts__text--hidden">Контактный</span>телефон*:</span>
+                <span class="contacts__text contacts__text--tel"><span class="contacts__hidden">Контактный</span>телефон*:</span>
               </label>
               <label class="contacts__item contacts__item--email" for="email">
-                <input class="contacts__field" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+                <input class="contacts__field contacts__field--email" type="email" name="email" id="email" placeholder="Введите e-mail" required>
                 <span class="contacts__text contacts__text--email">Электронная почта*:</span>
               </label>
             </div>
@@ -216,9 +217,9 @@
             </ul>
           </div>
           <div class="page-footer__copyright copyright">
-            <b class="copyright__text">Разработано</b>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <svg class="copyright__icon" width="27" height="34">
+            <b class="copyright__text copyright__text--form">Разработано</b>
+            <a class="copyright__link copyright__link--form" href="https://htmlacademy.ru/intensive/adaptive">
+              <svg class="copyright__icon copyright__icon--form" width="27" height="34">
                 <use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
               </svg>
               <span class="visually-hidden">HTML Academy</span>
