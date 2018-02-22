@@ -7,43 +7,44 @@
   margin: 0 auto;
   height: 350px;
   margin-bottom: 31px;
-  &__interactive {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    border: 0;
-    height: 350px;
-  }
-  &__image {
-    width: 320px;
-    height: 350px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-160px);
-    z-index: 1;
-    margin: 0 auto;
-  }
+}
+.map__interactive {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  border: 0;
+  height: 350px;
+}
+.map__image {
+  width: 320px;
+  height: 350px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-160px);
+  z-index: 1;
+  margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {
   .map {
     margin-bottom: 6px;
-    &__image {
-      width: 768px;
-      transform: translateX(-384px);
-    }
+  }
+  .map__image {
+    width: 768px;
+    transform: translateX(-384px);
   }
 }
 
 @media (min-width: @desktop-width) {
   .map {
     margin-bottom: 4px;
-    &__image {
-      width: 1200px;
-      transform: translateX(-600px);
-    }
+  }
+  .map__image {
+    width: 1200px;
+    transform: translateX(-600px);
   }
 }
+

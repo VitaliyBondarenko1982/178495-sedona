@@ -10,31 +10,33 @@
   border: none;
   color: #ffffff;
   cursor: pointer;
-  &__feedback {
-    font-size: 21px;
-    padding: 16px 48px;
-    font-family: "PT Sans", Arial, sans-serif;
-  }
   &:hover {
-  background-color: #669ec0;
+    background-color: #669ec0;
   }
   &:active {
-  background-color: #5496bd;
-  color: rgba(256, 256, 256, 0.3);
+    background-color: #5496bd;
+    color: rgba(256, 256, 256, 0.3);
   }
   &:disabled {
-  background-color: #e5e5e5;
+    background-color: #e5e5e5;
   }
 }
+.button__feedback {
+  font-size: 21px;
+  padding: 16px 48px;
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
+
 
 @media (min-width: @tablet-width) {
-.button__feedback {
+  .button__feedback {
     padding: 16px 75px 16px 65px;
   }
 }
 
 @media (min-width: @desktop-width) {
-.button__feedback {
+  .button__feedback {
     padding: 16px 145px 16px 150px;
   }
 }

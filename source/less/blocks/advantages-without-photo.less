@@ -1,13 +1,13 @@
 @import "../variables";
 
 .advantages-without-photo {
-    width: 320px;
-    margin: 0 auto;
-  &__item {
-    position: relative;
-    background-color: #eeeeee;
-  }
-  &__item::before {
+  width: 320px;
+  margin: 0 auto;
+}
+.advantages-without-photo__item {
+  position: relative;
+  background-color: #eeeeee;
+  &::before {
     content: "";
     position: absolute;
     left: center;
@@ -17,32 +17,33 @@
     background-color: #e5e5e5;
     transform: translateX(-140px);
   }
-  &__title {
-    font-size: 18px;
-    font-weight: 700;
-    padding: 27px 25px;
-    padding-bottom: 0;
-  }
-  &__number {
-    color: #333333;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    margin-top: -4px;
-  }
-  &__description {
-    color: #333333;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    padding: 0 32px;
-    padding-bottom: 30px;
-  }
-  &__item:first-child,
-  &__item:nth-child(2) {
-    margin-bottom: -17px;
-  }
 }
+.advantages-without-photo__title {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 27px 25px;
+  padding-bottom: 0;
+}
+.advantages-without-photo__number {
+  color: #333333;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: -4px;
+}
+.advantages-without-photo__description {
+  color: #333333;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 0 32px;
+  padding-bottom: 30px;
+}
+.advantages-without-photo__item:first-child,
+.advantages-without-photo__item:nth-child(2) {
+  margin-bottom: -17px;
+}
+
 
 @media (min-width: @tablet-width) {
   .advantages-without-photo {
@@ -76,10 +77,10 @@
   .advantages-without-photo__description {
     padding: 0px 45px;
     padding-top: 9px;
-  }
-  .advantages-without-photo__description--fourth {
-    padding-left: 55px;
-    padding-right: 55px;
+    &--fourth {
+      padding-left: 55px;
+      padding-right: 55px;
+    }
   }
   .advantages-without-photo__item:first-child,
   .advantages-without-photo__item:nth-child(2) {
@@ -109,9 +110,9 @@
   .advantages-without-photo__description {
     padding: 0px 55px;
     padding-top: 5px;
-  }
-  .advantages-without-photo__description--fourth {
-    padding-left: 63px;
-    padding-right: 63px;
+    &--fourth {
+      padding-left: 63px;
+      padding-right: 63px;
+    }
   }
 }

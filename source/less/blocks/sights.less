@@ -16,76 +16,76 @@
     background-color: #e5e5e5;
     transform: translateX(-160px);
   }
-  &__wrapper {
-    width: 280px;
-    padding: 0 20px;
-    margin: 0 auto;
-  }
-  &__item {
-    position: relative;
-    display:flex;
-    margin-bottom: 30px;
-    cursor: pointer;
-    width: auto;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    margin-top: 20px;
-  }
-  &__text::before {
-    content: "";
-    position: absolute;
-    left: -1px;
-    top: -3px;
-    width: 56px;
-    height: 56px;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-    z-index: 1;
-  }
-  &__field:hover ~ &__text::before  {
-    background-color: #e5e5e5;
-  }
-  &__field:active ~ &__text::before{
-    background-color: #d5d5d5;
-  }
-  &__field + &__icon-tick {
-    position: absolute;
-    top: 10px;
-    left: 13px;
-    z-index: 2;
-    display: none;
-  }
-  &__field:checked + &__icon-tick{
-    display: block;
-  }
-  &__field:active ~ &__icon-tick {
-    fill: #a4a4a4;
-  }
-  &__field {
-    font-size: 18px;
-    font-weight: 700;
-    display: none;
-    border: none;
-    width: 45px;
-  }
-  &__title {
-    font-size: 18px;
-    line-height: 26px;
-    color: #000000;
-    margin-top: 53px;
-    margin-bottom: 3px;
-  }
-  &__text {
-    display: block;
-    font-size: 18px;
-    line-height: 26px;
-    color: #000000;
-    width: 220px;
-    text-align: left;
-    padding-top: 0px;
-    padding-left: 79px;
-    text-transform: none;
-  }
+}
+.sights__wrapper {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.sights__item {
+  position: relative;
+  display:flex;
+  margin-bottom: 30px;
+  cursor: pointer;
+  width: auto;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: 20px;
+}
+.sights__text::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: -3px;
+  width: 56px;
+  height: 56px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  z-index: 1;
+}
+.sights__field:hover ~ .sights__text::before  {
+  background-color: #e5e5e5;
+}
+.sights__field:active ~ .sights__text::before{
+  background-color: #d5d5d5;
+}
+.sights__field + .sights__icon-tick {
+  position: absolute;
+  top: 10px;
+  left: 13px;
+  z-index: 2;
+  display: none;
+}
+.sights__field:checked + .sights__icon-tick{
+  display: block;
+}
+.sights__field:active ~ .sights__icon-tick {
+  fill: #a4a4a4;
+}
+.sights__field {
+  font-size: 18px;
+  font-weight: 700;
+  display: none;
+  border: none;
+  width: 45px;
+}
+.sights__title {
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  margin-top: 53px;
+  margin-bottom: 3px;
+}
+.sights__text {
+  display: block;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  width: 220px;
+  text-align: left;
+  padding-top: 0px;
+  padding-left: 79px;
+  text-transform: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -108,67 +108,67 @@
       width: 125px;
       height: 1px;
     }
-    &__title {
-      font-size: 21px;
-      margin-top: 2px;
-      margin-left: -7px;
-      width: 350px;
+  }
+  .sights__title {
+    font-size: 21px;
+    margin-top: 2px;
+    margin-left: -7px;
+    width: 350px;
+  }
+  .sights__wrapper {
+    width: 458px;
+    padding: 0 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .sights__item {
+    width: 205px;
+    margin-bottom: 0;
+    &--bridge {
+      order: 1;
     }
-    &__wrapper {
-      width: 458px;
-      padding: 0 60px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+    &--park {
+      order: 3;
     }
-    &__item {
-      width: 205px;
-      margin-bottom: 0;
-      &--bridge {
-        order: 1;
-      }
-      &--park {
-        order: 3;
-      }
-      &--hill {
-        order: 2;
-      }
-      &--rocks {
-        order: 4;
-      }
+    &--hill {
+      order: 2;
     }
-    &__item::before {
-      left: -60px;
-      top: 15px;
+    &--rocks {
+      order: 4;
     }
-    &__text {
-      text-align: left;
-      padding-top: 19px;
-      padding-left: 25px;
-      &--bridge,
-      &--park {
-        padding-left: 20px;
-      }
+  }
+  .sights__item::before {
+    left: -60px;
+    top: 15px;
+  }
+  .sights__text {
+    text-align: left;
+    padding-top: 19px;
+    padding-left: 25px;
+    &--bridge,
+    &--park {
+      padding-left: 20px;
     }
-    &__text::before {
-      top: 19px;
-      left: -59px;
-    }
-    &__text--hill::before,
-    &__text--rocks::before{
-      left: -56px;
-    }
-    &__field + &__icon-tick {
-      top: 28px;
-      left: -43px;
-      z-index: 2;
-    }
-    &__field + &__icon-tick--hill,
-    &__field + &__icon-tick--rocks, {
-      left: -38px;
-      z-index: 2;
-    }
+  }
+  .sights__text::before {
+    top: 19px;
+    left: -59px;
+  }
+  .sights__text--hill::before,
+  .sights__text--rocks::before{
+    left: -56px;
+  }
+  .sights__field + .sights__icon-tick {
+    top: 28px;
+    left: -43px;
+    z-index: 2;
+  }
+  .sights__field + .sights__icon-tick--hill,
+  .sights__field + .sights__icon-tick--rocks, {
+    left: -38px;
+    z-index: 2;
   }
 }
 
@@ -187,75 +187,75 @@
       top: 26px;
       width: 280px;
     }
-    &__wrapper {
-      width: 960px;
-      padding: 0;
-      flex-wrap: wrap;
+  }
+  .sights__wrapper {
+    width: 960px;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+  .sights__title {
+    text-align: center;
+    width: 350px;
+    padding: 0 200px 0 312px;
+    margin-bottom: 6px;
+  }
+  .sights__item {
+    width: 155px;
+    padding-left: 57px;
+  }
+  .sights__item--hill {
+    width: 150px;
+    padding-left: 62px;
+  }
+  .sights__item--park {
+    width: 145px;
+  }
+  .sights__text {
+    text-align: left;
+    padding-top: 19px;
+    padding-left: 25px;
+    &--bridge {
+      padding-left: 23px;
+      padding-top: 17px;
     }
-    &__title {
-      text-align: center;
-      width: 350px;
-      padding: 0 200px 0 312px;
-      margin-bottom: 6px;
+    &--hill {
+      padding-left: 24px;
+      padding-top: 16px;
     }
-    &__item {
-      width: 155px;
-      padding-left: 57px;
+    &--park {
+      padding-left: 35px;
+      padding-top: 17px;
     }
-    &__item--hill {
-      width: 150px;
-      padding-left: 62px;
+    &--rocks {
+      padding-left: 30px;
+      padding-top: 17px;
     }
-    &__item--park {
-      width: 145px;
-    }
-    &__text {
-      text-align: left;
-      padding-top: 19px;
-      padding-left: 25px;
-      &--bridge {
-        padding-left: 23px;
-        padding-top: 17px;
-      }
-      &--hill {
-        padding-left: 24px;
-        padding-top: 16px;
-      }
-      &--park {
-        padding-left: 35px;
-        padding-top: 17px;
-      }
-      &--rocks {
-        padding-left: 30px;
-        padding-top: 17px;
-      }
-    }
-    &__text::before {
-      left: 0px;
-      top: 15px;
-    }
-    &__text--park::before {
-      left: 10px;
-    }
-    &__text--rocks::before,
-    &__text--hill::before {
-      left: 8px;
-    }
-    &__field + &__icon-tick--bridge {
-      top: 27px;
-      left: 15px;
-    }
-    &__field + &__icon-tick--hill {
-      top: 27px;
-      left: 23px;
-    }
-    &__field + &__icon-tick--park {
-      top: 27px;
-      left: 25px;
-    }
-    &__field + &__icon-tick--rocks {
-      top: 27px;
-      left: 22px;
-    }
+  }
+  .sights__text::before {
+    left: 0px;
+    top: 15px;
+  }
+  .sights__text--park::before {
+    left: 10px;
+  }
+  .sights__text--rocks::before,
+  .sights__text--hill::before {
+    left: 8px;
+  }
+  .sights__field + .sights__icon-tick--bridge {
+    top: 27px;
+    left: 15px;
+  }
+  .sights__field + .sights__icon-tick--hill {
+    top: 27px;
+    left: 23px;
+  }
+  .sights__field + .sights__icon-tick--park {
+    top: 27px;
+    left: 25px;
+  }
+  .sights__field + .sights__icon-tick--rocks {
+    top: 27px;
+    left: 22px;
   }
 }

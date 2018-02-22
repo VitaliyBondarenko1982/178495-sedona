@@ -4,57 +4,58 @@
   font-family: "PT Sans", Arial, sans-serif;
   width: 320px;
   margin: 0 auto;
-  &__item {
-    background-color: #81b3d2;
-    min-height: 210px;
-  }
-  &__item--first {
+}
+.advantages-with-photo__item {
+  background-color: #81b3d2;
+  min-height: 210px;
+  &--first {
     background-image: url("../img/bg-triangle.svg");
     background-repeat: no-repeat;
     background-position: 50% -20px;
   }
-  &__title {
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 700;
-    padding: 36px 25px;
-    padding-bottom: 0;
-  }
-  &__title--first {
-    padding-top: 59px;
-  }
-   &__title--second {
-    padding-top: 39px;
-  }
-  &__number {
-    color: #ffffff;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    margin-top: -7px;
-  }
-  &__description {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    padding: 0 26px;
-    padding-bottom: 30px;
-    color: #ffffff;
-  }
-  &__image {
-    display: block;
-    width: 320px;
-    height: 260px;
-    margin-top: -12px;
-    margin-bottom: -20px;
-  }
-  &__image--second {
-    height: 262px;
-  }
-  &__item--second {
+  &--second {
     min-height: 191px;
   }
 }
+.advantages-with-photo__title {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 36px 25px;
+  padding-bottom: 0;
+  &--first {
+    padding-top: 59px;
+  }
+  &--second {
+    padding-top: 39px;
+  }
+}
+.advantages-with-photo__number {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: -7px;
+}
+.advantages-with-photo__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 0 26px;
+  padding-bottom: 30px;
+  color: #ffffff;
+}
+.advantages-with-photo__image {
+  display: block;
+  width: 320px;
+  height: 260px;
+  margin-top: -12px;
+  margin-bottom: -20px;
+    &--second {
+    height: 262px;
+  }
+}
+
 
 @media (min-width: @tablet-width) {
   .advantages-with-photo {
